@@ -1,0 +1,42 @@
+[
+  {
+    "name": "South Park Memory Card",
+    "description": "Créez un jeu de memory sur le thème de la série South Park",
+    "image": "../assets/img/south_park.png",
+    "demoLink": "https://cnahornyj.github.io/memory-game/",
+    "codeLink": "https://github.com/cnahornyj/memory-game",
+    "languages": ["HTML", "CSS", "Javascript", "React", "Redux"]
+  },
+  {
+    "name": "Kasa",
+    "description": "Développer une plateforme de location d’appartements entre particuliers",
+    "image": "../assets/img/kasa.png",
+    "demoLink": "https://cnahornyj.github.io/kasa/",
+    "codeLink": "https://github.com/cnahornyj/kasa",
+    "languages": ["HTML", "CSS", "Javascript", "React"]
+  },
+  {
+    "name": "La Chouette Agence",
+    "description": "Optimiser le référencement naturel du site d'une grande agence de web design",
+    "image": "../assets/img/lachouetteagence.png",
+    "demoLink": "https://cnahornyj.github.io/la-chouette-agence/",
+    "codeLink": "https://github.com/cnahornyj/la-chouette-agence",
+    "languages": ["HTML", "CSS", "Javascript", "SEO"]
+  },
+  {
+    "name": "Argent Bank",
+    "description": "Créez une application bancaire pour les comptes utilisateurs",
+    "image": "../assets/img/argentbank.png",
+    "demoLink": "https://cnahornyj.github.io/memory-game/",
+    "codeLink": "https://github.com/cnahornyj/ClaraNahornyj_13_16122021",
+    "languages": ["HTML", "CSS", "Javascript", "React", "Redux", "MongoDB"]
+  },
+  {
+    "name": "Fish Eyes",
+    "description": "Créez un site accessible pour une plateforme de photographes",
+    "image": "../assets/img/fisheye.png",
+    "demoLink": "https://cnahornyj.github.io/fisheye/",
+    "codeLink": "https://github.com/cnahornyj/fisheye",
+    "languages": ["HTML", "CSS", "Javascript","Accessibilité"]
+  }
+]
