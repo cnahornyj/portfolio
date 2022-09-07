@@ -73,6 +73,10 @@ strong {
   margin: 0;
 }
 
+strong {
+  color: #b2a081;
+}
+
 li:hover {
   background-size: 100% 100%;
 }
