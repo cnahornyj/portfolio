@@ -28,6 +28,12 @@ body {
   background: #fdfdfd;
 }
 
+#homepage {
+  background-image: url("../assets/img/form_home.svg");
+  background-size: cover;
+  background-position: center 5%;
+}
+
 nav {
   z-index: 1;
   position: fixed;
@@ -116,6 +122,18 @@ Augmenter width ul
   width: 60px;
 }
 
+.aboutme-logo-linkedin {
+  position: relative;
+  left: 850px;
+  bottom: 130px;
+}
+
+.aboutme-logo-github {
+  position: relative;
+  left: 700px;
+  bottom: 145px;
+}
+
 /* 
 Page à propos
 a {
@@ -135,7 +153,7 @@ article {
 }
 
 #presentation > h1 {
-  color: #c1ae8c;
+  color: #6B6A6A;
 }
 
 #presentation > p {
@@ -184,7 +202,8 @@ p {
 #profile-pic {
   width: 350px;
   height: 500px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #achievements {
