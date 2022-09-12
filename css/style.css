@@ -114,7 +114,7 @@ Augmenter width ul
 .wave-line {
   width: 100%;
   position: relative;
-  top: -60px;
+  top: -50px;
   z-index: -1;
 }
 
@@ -122,42 +122,46 @@ Augmenter width ul
   top: 25px;
 }
 
+#discover {
+  position: relative;
+  bottom: 10px;
+}
+
 .social-media-logo {
   width: 60px;
 }
 
+/* h2 about me pt de rupture 900px */
+
 .aboutme-logo-linkedin {
   position: relative;
-  left: 850px;
+  left: 55%;
   bottom: 130px;
 }
 
 .aboutme-logo-github {
   position: relative;
-  left: 700px;
+  left: 46%;
   bottom: 145px;
 }
 
-/* 
-Page à propos
-a {
+.contact-logo-linkedin,
+.contact-logo-github {
   position: relative;
-  bottom: 150px;
-  left: 700px;
- }
-*/
-
-/* section {
-  margin: 100px auto;
-  width: 60%;
-} */
+  left: 75%;
+  bottom: 35px;
+}
 
 article {
   margin-top: 125px;
 }
 
+#presentation {
+  margin-top: 150px;
+}
+
 #presentation > h1 {
-  color: #6B6A6A;
+  color: #6b6a6a;
 }
 
 #presentation > p {
@@ -210,6 +214,91 @@ p {
   border-top-right-radius: 10px;
 }
 
+/* .dropdown {
+  list-style: none;
+  position: relative;
+  border: 1px solid #901c1c;
+  background-color: #901c1c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  height: 41px;
+  cursor: pointer;
+  padding: 0;
+}
+.dropdown__arrow {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transition: transform 0.2s linear;
+}
+.dropdown__arrow.expanded {
+  transform: rotate(-180deg);
+}
+path {
+  fill: white;
+}
+.dropdown__list {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9),
+    max-height 0.5s cubic-bezier(0, 0, 0.38, 0.9);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.dropdown__list-container {
+  position: relative;
+}
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown__list-item {
+  font-family: Lato, sans-serif;
+  padding: 10px 0px;
+  padding-left: 15px;
+  transition: background-color 0.1s linear, color 0.1s linear;
+  list-style-position: inside;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dropdown__list-item:hover,
+.dropdown__list-item:focus {
+  background-color: #db8877;
+  color: black;
+}
+hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 90%;
+}
+#dropdown__selected {
+  padding: 10px 0px;
+  padding-left: 15px;
+  list-style-position: inside;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  color: white;
+  background-color: #901c1c;
+}
+.open {
+  opacity: 1;
+  overflow: auto;
+  max-height: 15rem;
+  background-color: #901c1c;
+  color: white;
+} */
+
 #achievements {
   display: flex;
   flex-wrap: wrap;
@@ -243,15 +332,15 @@ p {
   height: 50%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  filter: grayscale(50%) sepia(50%);
-  -webkit-filter: grayscale(50%) sepia(50%);
-  -moz-filter: grayscale(50%) sepia(50%);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
 }
 
 .img-achievement:hover {
-  filter: grayscale(0);
+  filter: grayscale(50%);
   transition-property: filter;
-  transition-duration: 1.5s;
+  transition-duration: 1s;
   transition-timing-function: ease;
 }
 
@@ -288,8 +377,18 @@ button {
   font-family: "League Spartan";
   padding: 10px 15px;
   color: white;
-  background: #b2a081;
+  /* background: #b2a081; */
   border: 1px solid #b2a081;
+  background: rgb(178, 160, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(178, 160, 129, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+button > a {
+  color: white;
 }
 
 .btns {
@@ -309,10 +408,10 @@ button {
   font-family: "Agrandir Thin";
 }
 
-.demo {
-  background: #41b480;
-  border: 1px solid #3ca576;
-}
+/* .demo {
+  background: #ceb994;
+  border: 1px solid #bca987;
+} */
 
 .code {
   background: #ccc;
@@ -322,7 +421,6 @@ button {
 form {
   background: #c1ae8c59;
   padding: 20px;
-  border: 1px solid #c1b59f73;
   border-radius: 10px;
 }
 
