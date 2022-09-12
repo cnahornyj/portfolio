@@ -71,13 +71,37 @@ async function renderLanguages() {
 
   console.log(arrayOfLanguages);
 
-  let selectFilter = document.querySelector("#opt-languages");
+  let selectFilter = document.querySelector(".dropdown__list");
 
   for(let i = 0; i < arrayOfLanguages.length; i++) {
-    let option = document.createElement("li");
-    selectFilter.appendChild(option);
-    option.innerText = arrayOfLanguages[i];
+    // let option = document.createElement("li");
+    // selectFilter.appendChild(option);
+    // option.innerText = arrayOfLanguages[i];
   }
+
+  // **render list of frameworks onclick**
+  // function toggleListVisibility(e) {
+  //   if (e.type === "click") {
+  //     list.classList.toggle("open");
+  //     dropdownArrow.classList.toggle("expanded");
+  //     listContainer.setAttribute(
+  //       "aria-expanded",
+  //       list.classList.contains("open")
+  //     );
+  //   }
+  // }
+
+  // const list = document.querySelector(".dropdown__list");
+  // const listContainer = document.querySelector(".dropdown__list-container");
+  // const dropdownArrow = document.querySelector(".dropdown__arrow");
+  // const listItems = document.querySelectorAll(".dropdown__list-item");
+  // const dropdownSelectedNode = document.querySelector("#dropdown__selected");
+  // const listItemIds = [];
+
+  // dropdownSelectedNode.addEventListener("click", (e) =>
+  //   toggleListVisibility(e)
+  // );
+
 }
 
 renderLanguages();
