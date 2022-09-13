@@ -71,37 +71,58 @@ async function renderLanguages() {
 
   console.log(arrayOfLanguages);
 
-  let selectFilter = document.querySelector(".dropdown__list");
+  let selectFilter = document.querySelector(".list");
 
-  for(let i = 0; i < arrayOfLanguages.length; i++) {
-    // let option = document.createElement("li");
-    // selectFilter.appendChild(option);
-    // option.innerText = arrayOfLanguages[i];
+  for (let i = 0; i < arrayOfLanguages.length; i++) {
+    let option = document.createElement("li");
+    selectFilter.appendChild(option);
+    option.innerText = arrayOfLanguages[i];
+    option.setAttribute("class", "item");
   }
 
-  // **render list of frameworks onclick**
-  // function toggleListVisibility(e) {
-  //   if (e.type === "click") {
-  //     list.classList.toggle("open");
-  //     dropdownArrow.classList.toggle("expanded");
-  //     listContainer.setAttribute(
-  //       "aria-expanded",
-  //       list.classList.contains("open")
-  //     );
-  //   }
-  // }
+  const list = document.querySelector(".list");
+  const listContainer = document.querySelector(".list-container");
+  const dropdownArrow = document.querySelector(".arrow");
+  const listFrameworks = document.querySelectorAll(".item");
+  const dropdownSelectedNode = document.querySelector(".selected");
+  const filtersSelected = document.querySelector("#filtersSelected");
 
-  // const list = document.querySelector(".dropdown__list");
-  // const listContainer = document.querySelector(".dropdown__list-container");
-  // const dropdownArrow = document.querySelector(".dropdown__arrow");
-  // const listItems = document.querySelectorAll(".dropdown__list-item");
-  // const dropdownSelectedNode = document.querySelector("#dropdown__selected");
-  // const listItemIds = [];
+  function toggleListVisibility(e) {
+    if (e.type === "click") {
+      list.classList.toggle("open");
+      dropdownArrow.classList.toggle("expanded");
+      listContainer.setAttribute(
+        "aria-expanded",
+        list.classList.contains("open")
+      );
+    }
+  }
 
-  // dropdownSelectedNode.addEventListener("click", (e) =>
-  //   toggleListVisibility(e)
-  // );
+  dropdownSelectedNode.addEventListener("click", (e) =>
+    toggleListVisibility(e)
+  );
 
+  function closeList() {
+    list.classList.remove("open");
+    dropdownArrow.classList.remove("expanded");
+    listContainer.setAttribute("aria-expanded", false);
+  }
+
+  function createFilter(framework) {
+    let filter = document.createElement("span");
+    filter.innerHTML = framework;
+    filter.setAttribute("class","filter");
+    filtersSelected.appendChild(filter);
+  }
+
+  for (const framework of listFrameworks) {
+    framework.addEventListener("click", () => {
+      let filter = framework.innerHTML;
+      console.log(filter);
+      closeList();
+      createFilter(filter);
+    });
+  }
 }
 
 renderLanguages();
