@@ -35,23 +35,23 @@
             style="
               display: flex;
               justify-content: space-between;
+              align-items: center;
               margin-top: 50px;
             "
           >
             <h1>Mes réalisations</h1>
             <section id="filters">
-              
-              <!-- <ul class="dropdown">
+              <ul class="dropdown">
                 <li
                   role="button"
                   aria-labelledby="dropdown-label"
-                  id="dropdown__selected"
+                  class="selected"
                   tabindex="0"
                 >
                   Choississez un filtre
                 </li>
                 <svg
-                  class="dropdown__arrow"
+                  class="arrow"
                   width="10"
                   height="5"
                   viewBox="0 0 10 5"
@@ -63,16 +63,14 @@
                 <li
                   aria-expanded="false"
                   role="list"
-                  class="dropdown__list-container"
+                  class="list-container"
                 >
-                  <ul class="dropdown__list">
-                  </ul>
+                  <ul class="list"></ul>
                 </li>
-              </ul> -->
-
+              </ul>
             </section>
           </div>
-
+          <section id="filtersSelected"></section>
           <article id="achievements"></article>
         </section>
       </article>
