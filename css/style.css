@@ -43,7 +43,7 @@ nav {
   height: 10%;
 }
 
-ul {
+nav > ul {
   width: 70%;
   list-style-type: none;
   display: flex;
@@ -53,7 +53,7 @@ ul {
   padding-left: 0;
 }
 
-li {
+nav > ul > li {
   margin: 0 25px;
   text-decoration: none;
   color: #313131;
@@ -68,7 +68,7 @@ li {
   cursor: pointer;
 }
 
-li:first-child,
+nav > ul > li:first-child,
 strong {
   margin: 0;
 }
@@ -77,11 +77,11 @@ strong {
   color: #b2a081;
 }
 
-li:hover {
+nav > ul > li:hover {
   background-size: 100% 100%;
 }
 
-a {
+nav > ul > li > a {
   text-decoration: none;
   color: #313131;
 }
@@ -214,11 +214,11 @@ p {
   border-top-right-radius: 10px;
 }
 
-/* .dropdown {
+.dropdown {
   list-style: none;
   position: relative;
-  border: 1px solid #901c1c;
-  background-color: #901c1c;
+  border: 1px solid #b2a081;
+  background-color: #b2a081;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 250px;
@@ -226,20 +226,23 @@ p {
   cursor: pointer;
   padding: 0;
 }
-.dropdown__arrow {
+.arrow {
   color: white;
   position: absolute;
   right: 10px;
   top: 50%;
   transition: transform 0.2s linear;
 }
-.dropdown__arrow.expanded {
+
+.expanded {
   transform: rotate(-180deg);
 }
+
 path {
   fill: white;
 }
-.dropdown__list {
+
+.list {
   width: 100%;
   position: absolute;
   left: 0;
@@ -252,15 +255,30 @@ path {
   opacity: 0;
   z-index: 1;
 }
-.dropdown__list-container {
+
+.list-container {
   position: relative;
 }
+
 .dropdown ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.dropdown__list-item {
+
+.dropdown li {
+  font-family: "Agrandir Thin";
+  color: white;
+  background-color: #b2a081;
+}
+
+.list li {
+  padding: 3px 0px;
+  padding-left: 15px;
+  border-bottom: 1px solid white;
+}
+
+/* .dropdown__list-item {
   font-family: Lato, sans-serif;
   padding: 10px 0px;
   padding-left: 15px;
@@ -274,13 +292,11 @@ path {
 .dropdown__list-item:focus {
   background-color: #db8877;
   color: black;
-}
-hr {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  width: 90%;
-}
-#dropdown__selected {
+} */
+
+.selected {
+  font-family: "Agrandir Thin";
+  font-weight: bold;
   padding: 10px 0px;
   padding-left: 15px;
   list-style-position: inside;
@@ -289,7 +305,7 @@ hr {
   text-overflow: ellipsis;
   max-width: 80%;
   color: white;
-  background-color: #901c1c;
+  background-color: #b2a081;
 }
 .open {
   opacity: 1;
@@ -297,7 +313,38 @@ hr {
   max-height: 15rem;
   background-color: #901c1c;
   color: white;
-} */
+}
+
+#filtersSelected {
+  height: 30px;
+}
+
+.filter:first-child {
+  margin-right: 10px;
+}
+
+.filter:not(:first-child) {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.filter:after {
+  content: " X";
+  font-family: "League Spartan";
+  font-size: x-small;
+  position: relative;
+  bottom: 4px;
+  left: 2px;
+}
+
+.filter {
+  font-family: "Agrandir Thin";
+  font-weight: bold;
+  color: #b2a081;
+  border: 1px solid #b2a081;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
 
 #achievements {
   display: flex;
@@ -406,6 +453,7 @@ button > a {
 
 .btn-ach > a {
   font-family: "Agrandir Thin";
+  text-decoration: none;
 }
 
 /* .demo {
