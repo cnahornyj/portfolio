@@ -435,7 +435,10 @@ button {
 }
 
 button > a {
+  font-family: "League Spartan Lgt";
+  font-size: 18px;
   color: white;
+  text-decoration: none;
 }
 
 .btns {
