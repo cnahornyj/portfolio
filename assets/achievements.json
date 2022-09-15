@@ -5,7 +5,7 @@
     "image": "../assets/img/south_park.png",
     "demoLink": "https://cnahornyj.github.io/memory-game/",
     "codeLink": "https://github.com/cnahornyj/memory-game",
-    "languages": ["HTML", "CSS", "Javascript", "React", "Redux"]
+    "languages": ["React", "Redux"]
   },
   {
     "name": "Kasa",
@@ -13,7 +13,7 @@
     "image": "../assets/img/kasa.png",
     "demoLink": "https://cnahornyj.github.io/kasa/",
     "codeLink": "https://github.com/cnahornyj/kasa",
-    "languages": ["HTML", "CSS", "Javascript", "React"]
+    "languages": ["React"]
   },
   {
     "name": "La Chouette Agence",
@@ -21,7 +21,7 @@
     "image": "../assets/img/lachouetteagence.png",
     "demoLink": "https://cnahornyj.github.io/la-chouette-agence/",
     "codeLink": "https://github.com/cnahornyj/la-chouette-agence",
-    "languages": ["HTML", "CSS", "Javascript", "SEO"]
+    "languages": ["SEO"]
   },
   {
     "name": "Argent Bank",
@@ -29,7 +29,7 @@
     "image": "../assets/img/argentbank.png",
     "demoLink": "https://cnahornyj.github.io/memory-game/",
     "codeLink": "https://github.com/cnahornyj/ClaraNahornyj_13_16122021",
-    "languages": ["HTML", "CSS", "Javascript", "React", "Redux", "MongoDB"]
+    "languages": ["React", "Redux", "MongoDB"]
   },
   {
     "name": "Fish Eyes",
@@ -37,6 +37,6 @@
     "image": "../assets/img/fisheye.png",
     "demoLink": "https://cnahornyj.github.io/fisheye/",
     "codeLink": "https://github.com/cnahornyj/fisheye",
-    "languages": ["HTML", "CSS", "Javascript","Accessibilité"]
+    "languages": ["Accessibilité"]
   }
 ]
