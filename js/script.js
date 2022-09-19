@@ -49,11 +49,11 @@ async function renderAchievements() {
 
     card.setAttribute("class", "card");
     image.setAttribute("class", "img-achievement");
-    description.setAttribute("class", "resume");
+    description.setAttribute("class", "description_project");
     container.setAttribute("class", "container");
     btns.setAttribute("class", "btns");
-    demoBtn.classList.add("btn-ach", "demo");
-    codeBtn.classList.add("btn-ach", "code");
+    demoBtn.classList.add("button_ach", "demo");
+    codeBtn.classList.add("button_ach", "code");
   }
 
   const list = document.querySelector(".list");
@@ -141,11 +141,11 @@ async function renderAchievements() {
 
       card.setAttribute("class", "card");
       image.setAttribute("class", "img-achievement");
-      description.setAttribute("class", "resume");
+      description.setAttribute("class", "description_project");
       container.setAttribute("class", "container");
       btns.setAttribute("class", "btns");
-      demoBtn.classList.add("btn-ach", "demo");
-      codeBtn.classList.add("btn-ach", "code");
+      demoBtn.classList.add("button_ach", "demo");
+      codeBtn.classList.add("button_ach", "code");
     }
 
     /*

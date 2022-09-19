@@ -26,12 +26,7 @@ body {
   letter-spacing: 1.2px;
   margin: 0;
   background: #fdfdfd;
-}
-
-#homepage {
-  background-image: url("../assets/img/form_home.svg");
-  background-size: cover;
-  background-position: center 5%;
+  width: 100%;
 }
 
 nav {
@@ -39,6 +34,7 @@ nav {
   position: fixed;
   top: 0;
   background: white;
+  color: #3c4244;
   width: 100%;
   height: 10%;
 }
@@ -56,7 +52,6 @@ nav > ul {
 nav > ul > li {
   margin: 0 25px;
   text-decoration: none;
-  color: #313131;
   background: linear-gradient(
       to top,
       #ddddd48f 0%,
@@ -68,6 +63,15 @@ nav > ul > li {
   cursor: pointer;
 }
 
+nav > ul > li:hover {
+  background-size: 100% 100%;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #3c4244;
+}
+
 nav > ul > li:first-child,
 strong {
   margin: 0;
@@ -77,15 +81,6 @@ strong {
   color: #b2a081;
 }
 
-nav > ul > li:hover {
-  background-size: 100% 100%;
-}
-
-nav > ul > li > a {
-  text-decoration: none;
-  color: #313131;
-}
-
 .push {
   margin-left: auto;
 }
@@ -93,22 +88,6 @@ nav > ul > li > a {
 main {
   width: 70%;
   margin: auto;
-}
-
-/* 
-1er point de rupture : 1220px; 
-Augmenter width ul
-
-
-2ème pt de rupture : <861px
-#achievement justify-content center
-*/
-
-.img-acc {
-  position: absolute;
-  top: 60px;
-  left: 55%;
-  width: 25%;
 }
 
 .wave-line {
@@ -122,24 +101,17 @@ Augmenter width ul
   top: 25px;
 }
 
-#discover {
-  position: relative;
-  bottom: 10px;
-}
-
 .social-media-logo {
   width: 60px;
 }
 
-/* h2 about me pt de rupture 900px */
-
-.aboutme-logo-linkedin {
+.aboutme-linkedin {
   position: relative;
   left: 55%;
   bottom: 130px;
 }
 
-.aboutme-logo-github {
+.aboutme-github {
   position: relative;
   left: 46%;
   bottom: 145px;
@@ -165,23 +137,22 @@ article {
 }
 
 #presentation > p {
-  font-size: 1.9vw;
+  font-size: 2em;
+  letter-spacing: 0.5px;
   line-height: 1.45;
 }
 
 h1 {
   font-family: "League Spartan";
-  font-size: 2vw;
+  font-size: 2em;
 }
 
 h2 {
   font-family: "Agrandir Thin";
-  font-size: 18px;
   color: #3c4244;
 }
 
 h3 {
-  font-size: 17px;
   margin: 10px 0;
 }
 
@@ -190,15 +161,28 @@ p {
   margin: 0;
 }
 
+p {
+  font-size: 1.25em;
+}
+
 #about-me {
   display: flex;
 }
 
-#about-me > div > h2 {
+#about-me > div > h1 {
+  margin-bottom: 25px;
+}
+
+#about-me > div > p {
+  font-family: "Agrandir Thin";
+  font-weight: bold;
+  margin-bottom: 25px;
   text-align: justify;
 }
 
-#about-me > div > button {
+#about-me > button {
+  position: relative;
+  bottom: 10px;
   margin-top: 15px;
 }
 
@@ -226,6 +210,7 @@ p {
   cursor: pointer;
   padding: 0;
 }
+
 .arrow {
   color: white;
   position: absolute;
@@ -350,7 +335,8 @@ path {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 25px 0;
+  margin: 25px 0 75px;
+  color: #3c4244;
 }
 
 .card {
@@ -410,7 +396,7 @@ path {
   padding: 5px 10px;
 }
 
-.resume {
+.description_project {
   font-size: 14px;
   font-family: "Agrandir Thin";
   margin: 10px 0;
@@ -437,6 +423,7 @@ button {
 button > a {
   font-family: "League Spartan Lgt";
   font-size: 18px;
+  padding: 0 15px;
   color: white;
   text-decoration: none;
 }
@@ -446,7 +433,7 @@ button > a {
   justify-content: space-around;
 }
 
-.btn-ach {
+.button_ach {
   width: 45%;
   border-radius: 50px;
   padding: 5px;
@@ -454,15 +441,12 @@ button > a {
   cursor: pointer;
 }
 
-.btn-ach > a {
+.button_ach > a {
   font-family: "Agrandir Thin";
+  font-size: 14px;
   text-decoration: none;
+  padding: 0;
 }
-
-/* .demo {
-  background: #ceb994;
-  border: 1px solid #bca987;
-} */
 
 .code {
   background: #ccc;
@@ -487,4 +471,35 @@ textarea {
 ::placeholder {
   font-weight: bold;
   color: #b2a081;
+}
+
+/* Points de ruptures 
+<1090px
+
+
+*/
+
+@media (max-width: 1190px) {
+  nav > ul,
+  main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  nav > ul {
+    width: 95%;
+  }
+  main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* voir pour le svg bottom 0 */
+}
+
+@media (max-width: 860px) {
+  /* voir pour le menu déroulant */
+  /* utilisation de JS pour disparition des li sauf le premier */
 }
