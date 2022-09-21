@@ -473,12 +473,6 @@ textarea {
   color: #b2a081;
 }
 
-/* Points de ruptures 
-<1090px
-
-
-*/
-
 @media (max-width: 1190px) {
   nav > ul,
   main {
@@ -499,7 +493,17 @@ textarea {
   /* voir pour le svg bottom 0 */
 }
 
-@media (max-width: 860px) {
-  /* voir pour le menu déroulant */
-  /* utilisation de JS pour disparition des li sauf le premier */
+#responsible-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#responsible-navigation > span {
+  margin-left: 90px;
+}
+
+.menu-icon {
+  width: 64px;
+  height: 64px;
 }
