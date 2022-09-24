@@ -9,7 +9,7 @@
     <title>Vous avez des questions ? N'hésitez pas me contacter pour plus de détails !</title>
   </head>
   <body>
-    <nav>
+    <nav id="desk-nav">
       <ul>
         <li>
           Clara<br />
@@ -18,10 +18,31 @@
         <li class="push"><a href="index.html">ACCUEIL</a></li>
         <li><a href="aboutme.html">A PROPOS</a></li>
         <li><a href="achievements.html">RÉALISATIONS</a></li>
-        <li>CONTACTEZ MOI</li>
+        <li><a href="contactme.html">CONTACTEZ MOI</a></li>
       </ul>
     </nav>
-
+    <section id="resp-nav">
+      <div>
+          <span>
+          Clara<br />
+          NAHORNYJ
+          </span>
+      </div>
+      <div>
+        <img src="assets/img/menu-icon.svg" 
+        alt="" 
+        role="button"
+        id="icon-menu"/>
+        <nav id="responsible-navigation">
+          <ul>
+            <li><a href="index.html" class="location">Accueil</a></li>
+            <li><a href="aboutme.html" class="location">A propos</a></li>
+            <li><a href="achievements.html" class="location">Réalisations</a></li>
+            <li><a href="contactme.html" class="location">Contactez moi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
     <main>
       <section>
         <article id="about-me">
@@ -74,5 +95,6 @@
     <img src="../assets/img/wave-contact.svg" alt="" class="wave-line sd-wave" />
     <a href="https://github.com/cnahornyj/" target="_blank"><img src="../assets/img/github.svg" alt="" class="social-media-logo contact-logo-github"></a>
     <a href="https://www.linkedin.com/in/claranahornyj/" target="_blank"><img src="../assets/img/linkedin.svg" alt="" class="social-media-logo contact-logo-linkedin"></a>
+    <script src="../js/nav.js"></script>
   </body>
 </html>

@@ -1,43 +1,33 @@
 let navigation = document.querySelector("nav");
+const responsiveNav = document.querySelector("#resp-nav");
+const image = document.querySelector("#icon-menu");
+const list = document.querySelector("#responsible-navigation");
+const locations = document.querySelectorAll(".locations");
+
+function toggleListVisibility(e) {
+  if (e.type === "click") {
+    list.classList.toggle("navIsOpen");
+  }
+}
+
+image.addEventListener("click", (e) => toggleListVisibility(e));
+
+function closeList() {
+  list.classList.remove("navIsOpen");
+}
 
 function myFunction(x) {
   if (x.matches) {
-    navigation.innerHTML = "";
-    navigation.setAttribute("id","responsible-navigation");
-    navigation.innerHTML += `
-    <span>
-    Clara<br />
-    NAHORNYJ
-    </span>
-    <img src="assets/img/menu-icon.svg" alt="" class="menu-icon" />`
-    // <ul>
-    //   <li><a href="index.html">ACCUEIL</li>
-    //   <li><a href="aboutme.html">A PROPOS</a></li>
-    //   <li><a href="achievements.html">RÉALISATIONS</a></li>
-    //   <li><a href="contactme.html">CONTACTEZ MOI</a></li>
-    // </ul>;
+    /* Navbar responsive */
+    navigation.style.display = "none";
+    responsiveNav.style.display = "flex";
   } else {
-    navigation.removeAttribute("id");
-    navigation.innerHTML = "";
-    navigation.innerHTML += ` <ul>
-     <li>
-       Clara<br />
-       NAHORNYJ
-     </li>
-     <li class="push">ACCUEIL</li>
-     <li><a href="aboutme.html">A PROPOS</a></li>
-     <li><a href="achievements.html">RÉALISATIONS</a></li>
-     <li><a href="contactme.html">CONTACTEZ MOI</a></li>
-   </ul>`;
+    /* Navbar desktop */
+    navigation.style.display = "flex";
+    responsiveNav.style.display = "none";
   }
 }
 
 var x = window.matchMedia("(max-width: 895px)");
 myFunction(x); //
 x.addListener(myFunction);
-
-// let selectDestination = document.querySelector("#select-destination");
-
-// selectDestination.addEventListener("click", (e) => {
-//     console.log("Cliqué !");
-// })
