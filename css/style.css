@@ -13,51 +13,21 @@
   src: url("../assets/fonts/Agrandir-Thin.ttf");
 }
 
-/* .colors{
-gold #C1AE8C
-darkgold #B2A081
-lightgrey #FDFDFD
-blackgrey #313131
-} */
-
 body {
-  font-family: "League Spartan", "Trebuchet MS", "Lucida Sans Unicode",
-    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  letter-spacing: 1.2px;
+  font-family: "League Spartan", "Trebuchet MS", Arial;
   margin: 0;
   background: #fdfdfd;
-  width: 100%;
+  letter-spacing: 1.1px;
 }
 
-#desk-nav {
+nav {
+  width: 100%;
   z-index: 1;
-  position: fixed;
-  top: 0;
-  background: white;
-  color: #3c4244;
-  width: 100%;
-  height: 10%;
 }
 
-#resp-nav > div:first-child {
-  padding-left: 20px;
-}
-
-#resp-nav > div:nth-child(2) {
-  padding-right: 20px;
-}
-
-
-#desk-nav ul {
-  width: 70%;
+ul {
   list-style-type: none;
-  display: flex;
-  margin: 20px auto;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
 }
-
 
 nav > ul > li {
   margin: 0 25px;
@@ -73,12 +43,11 @@ nav > ul > li {
   cursor: pointer;
 }
 
-
 nav > ul > li:hover {
   background-size: 100% 100%;
 }
 
-nav > ul > li > a {
+a {
   text-decoration: none;
   color: #3c4244;
 }
@@ -92,8 +61,84 @@ strong {
   color: #b2a081;
 }
 
+nav:first-child {
+  position: fixed;
+  top: 0;
+  background: white;
+  color: #3c4244;
+  height: 10%;
+}
+
+nav:first-child ul {
+  width: 70%;
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
 .push {
   margin-left: auto;
+}
+
+#responsibleNav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#responsibleNav > div:first-child {
+  padding-left: 20px;
+}
+
+#responsibleNav > div:nth-child(2) {
+  padding-right: 20px;
+}
+
+#icon-menu {
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+}
+
+nav:nth-child(2) {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  background: #b2a081;
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
+}
+
+nav:nth-child(2) ul {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+nav:nth-child(2) li {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+nav:nth-child(2) li:not(:last-child) {
+  border-bottom: solid;
+}
+
+nav:nth-child(2) a {
+  font-family: Arial;
+  text-decoration: none;
+  color: white;
+}
+
+nav:nth-child(2) a:hover {
+  color: black;
+}
+
+.navIsOpen {
+  opacity: 1 !important;
+  background-color: #b2a081;
 }
 
 main {
@@ -101,15 +146,56 @@ main {
   margin: auto;
 }
 
-.wave-line {
-  width: 100%;
-  position: relative;
-  /* top: -50px; */
-  z-index: -1;
+h1 {
+  font-size: 2em;
 }
 
-.sd-wave {
-  top: 25px;
+h2 {
+  font-family: "Agrandir Thin";
+  color: #3c4244;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+article {
+  margin-top: 125px;
+}
+
+button {
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid #b2a081;
+  background: rgb(178, 160, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(178, 160, 129, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+button a {
+  font-family: "League Spartan Lgt";
+  font-size: 18px;
+  padding: 0 15px;
+  color: white;
+}
+
+path {
+  fill: white;
 }
 
 .social-media-logo {
@@ -135,10 +221,6 @@ main {
   bottom: 35px;
 }
 
-article {
-  margin-top: 125px;
-}
-
 #presentation {
   margin-top: 150px;
 }
@@ -153,56 +235,27 @@ article {
   line-height: 1.45;
 }
 
-h1 {
-  font-family: "League Spartan";
-  font-size: 2em;
-}
-
-h2 {
-  font-family: "Agrandir Thin";
-  color: #3c4244;
-}
-
-h3 {
-  margin: 10px 0;
-}
-
-h1,
-p {
-  margin: 0;
-}
-
-p {
-  font-size: 1.25em;
-}
-
 #aboutme {
   display: flex;
 }
 
-#aboutme > div > h1 {
-  margin-bottom: 25px;
-}
-
-#aboutme > div > p {
+#aboutme p {
   font-family: "Agrandir Thin";
   font-weight: bold;
+  margin-top: 25px;
   margin-bottom: 25px;
+  padding-right: 40px;
   text-align: justify;
+  line-height: 1.5;
 }
 
-#aboutme > button {
+#aboutme button {
   position: relative;
   bottom: 10px;
   margin-top: 15px;
 }
 
-#aboutme > div:first-child {
-  padding-right: 25px;
-  line-height: 1.5;
-}
-
-#profile-pic {
+img#profile-pic {
   width: 350px;
   height: 500px;
   border-top-left-radius: 10px;
@@ -234,10 +287,6 @@ p {
   transform: rotate(-180deg);
 }
 
-path {
-  fill: white;
-}
-
 .list {
   width: 100%;
   position: absolute;
@@ -257,24 +306,22 @@ path {
 }
 
 .dropdown ul {
-  list-style: none;
+  font-family: "Agrandir Thin";
   margin: 0;
   padding: 0;
 }
 
 .dropdown li {
-  font-family: "Agrandir Thin";
   color: white;
   background-color: #b2a081;
 }
 
 .list li {
-  padding: 3px 0px;
-  padding-left: 15px;
+  padding: 3px 0 0 15px;
   border-bottom: 1px solid white;
 }
 
-.selected {
+li[role=button] {
   font-family: "Agrandir Thin";
   font-weight: bold;
   padding: 10px 0px;
@@ -292,8 +339,6 @@ path {
   opacity: 1;
   overflow: auto;
   max-height: 15rem;
-  background-color: #901c1c;
-  color: white;
 }
 
 #filtersSelected {
@@ -305,13 +350,11 @@ path {
 }
 
 .filter:not(:first-child) {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 .filter:after {
   content: " X";
-  font-family: "League Spartan";
   font-size: x-small;
   position: relative;
   bottom: 4px;
@@ -399,48 +442,20 @@ path {
   text-align: justify;
 }
 
-button {
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  font-family: "League Spartan";
-  padding: 10px 15px;
-  color: white;
-  /* background: #b2a081; */
-  border: 1px solid #b2a081;
-  background: rgb(178, 160, 129);
-  background: linear-gradient(
-    90deg,
-    rgba(178, 160, 129, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
-
-button > a {
-  font-family: "League Spartan Lgt";
-  font-size: 18px;
-  padding: 0 15px;
-  color: white;
-  text-decoration: none;
-}
-
-.btns {
+.btnsAchievement {
   display: flex;
   justify-content: space-around;
 }
 
-.button_ach {
+.btnAch {
   width: 45%;
-  border-radius: 50px;
   padding: 5px;
   font-weight: bold;
-  cursor: pointer;
 }
 
-.button_ach > a {
+.btnAch > a {
   font-family: "Agrandir Thin";
   font-size: 14px;
-  text-decoration: none;
   padding: 0;
 }
 
@@ -450,9 +465,14 @@ button > a {
 }
 
 form {
+  width: 50%;
   background: #c1ae8c59;
   padding: 20px;
   border-radius: 10px;
+}
+
+form button {
+  width: 100%;
 }
 
 input,
@@ -464,20 +484,29 @@ textarea {
   padding: 5px;
 }
 
+input[type="text"] {
+  width: 50%;
+}
+
+input[type="email"],
+textarea {
+  width: 95%;
+}
+
 ::placeholder {
   font-weight: bold;
   color: #b2a081;
 }
 
 @media (max-width: 1190px) {
-  #desk-nav > ul,
+  nav:first-child > ul,
   main {
     width: 80%;
   }
 }
 
 @media (max-width: 1020px) {
-  #desk-nav > ul {
+  nav:first-child > ul {
     width: 95%;
   }
   main {
@@ -489,7 +518,7 @@ textarea {
   /* voir pour le svg bottom 0 */
 }
 
-@media (max-width: 895px){
+@media (max-width: 895px) {
   #aboutme {
     flex-direction: column;
     align-items: center;
@@ -497,58 +526,4 @@ textarea {
   #aboutme button {
     margin-bottom: 25px;
   }
-}
-
-#resp-nav {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#icon-menu {
-  width: 64px;
-  height: 64px;
-  z-index: 2;
-}
-
-#responsible-navigation {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background: #b2a081;
-  margin: 0;
-  opacity: 0;
-  transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
-  z-index: 1;
-}
-
-#responsible-navigation ul {
-  list-style-type: none;
-  padding: 0 10px;
-  font-weight: bold;
-}
-
-#responsible-navigation li {
-  color: white;
-  margin: 0;
-  padding: 10px;
-}
-
-#responsible-navigation li:not(:last-child) {
-  border-bottom: solid;
-}
-
-#responsible-navigation a {
-  font-family: Arial;
-  text-decoration: none;
-  color: white;
-}
-
-#responsible-navigation a:hover {
-  color: black;
-}
-
-.navIsOpen {
-  opacity: 1 !important;
-  background-color: #B2A081;
 }
