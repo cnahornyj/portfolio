@@ -51,9 +51,9 @@ async function renderAchievements() {
     image.setAttribute("class", "img-achievement");
     description.setAttribute("class", "description_project");
     container.setAttribute("class", "container");
-    btns.setAttribute("class", "btns");
-    demoBtn.classList.add("button_ach", "demo");
-    codeBtn.classList.add("button_ach", "code");
+    btns.setAttribute("class", "btnsAchievement");
+    demoBtn.classList.add("btnAch", "demo");
+    codeBtn.classList.add("btnAch", "code");
   }
 
   const list = document.querySelector(".list");
@@ -143,9 +143,9 @@ async function renderAchievements() {
       image.setAttribute("class", "img-achievement");
       description.setAttribute("class", "description_project");
       container.setAttribute("class", "container");
-      btns.setAttribute("class", "btns");
-      demoBtn.classList.add("button_ach", "demo");
-      codeBtn.classList.add("button_ach", "code");
+      btns.setAttribute("class", "btnsAchievement");
+      demoBtn.classList.add("btnAch", "demo");
+      codeBtn.classList.add("btnAch", "code");
     }
 
     /*

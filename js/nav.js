@@ -1,8 +1,7 @@
 let navigation = document.querySelector("nav");
-const responsiveNav = document.querySelector("#resp-nav");
+const responsiveNav = document.querySelector("#responsibleNav");
 const image = document.querySelector("#icon-menu");
-const list = document.querySelector("#responsible-navigation");
-const locations = document.querySelectorAll(".locations");
+const list = document.querySelector("nav:nth-child(2)");
 
 function toggleListVisibility(e) {
   if (e.type === "click") {
