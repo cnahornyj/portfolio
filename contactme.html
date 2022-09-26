@@ -9,7 +9,7 @@
     <title>Vous avez des questions ? N'hésitez pas me contacter pour plus de détails !</title>
   </head>
   <body>
-    <nav id="desk-nav">
+    <nav>
       <ul>
         <li>
           Clara<br />
@@ -21,36 +21,43 @@
         <li><a href="contactme.html">CONTACTEZ MOI</a></li>
       </ul>
     </nav>
-    <section id="resp-nav">
+    <section id="responsibleNav">
       <div>
-          <span>
+        <span>
           Clara<br />
           NAHORNYJ
-          </span>
+        </span>
       </div>
       <div>
-        <img src="assets/img/menu-icon.svg" 
+        <img
+          src="assets/img/menu-icon.svg"
+          alt=""
         alt="" 
-        role="button"
-        id="icon-menu"/>
+          alt=""
+          role="button"
+          id="icon-menu"
+        />
         <nav id="responsible-navigation">
           <ul>
             <li><a href="index.html" class="location">Accueil</a></li>
             <li><a href="aboutme.html" class="location">A propos</a></li>
-            <li><a href="achievements.html" class="location">Réalisations</a></li>
+            <li>
+              <a href="achievements.html" class="location">Réalisations</a>
+            </li>
             <li><a href="contactme.html" class="location">Contactez moi</a></li>
           </ul>
         </nav>
       </div>
     </section>
     <main>
-      <section>
-        <article id="about-me">
-          <div style="width: 50%">
-            <h1>Une question ? Contactez moi</h1>
+      <article>
+        <h1>Une question ? Contactez moi</h1>
+        <section id="aboutme">
+          <div>
             <p>
               Vous souhaitez en savoir plus sur mon parcours et mes motivations
-              ? Echanger autour d'un café pour en discuter ? ☕ <br />
+              ? <br /><br />
+              Echanger autour d'un café pour en discuter ? ☕ <br /><br />
               N'hésitez pas à me contacter !
             </p>
             <iframe
@@ -63,38 +70,49 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div style="width: 50%">
-            <form action="">
-              <div style="display: flex; justify-content: space-between">
-                <label for="surname"></label>
-                <input type="text" placeholder="Prénom" style="width: 50%" />
-                <label for="name"></label>
-                <input type="text" placeholder="Nom" style="width: 50%" />
-              </div>
-              <div>
-                <label for="Email"></label>
-                <input type="email" placeholder="Email" style="width: 95%" />
-              </div>
-              <div>
-                <label for="message"></label>
-                <textarea
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="20"
-                  placeholder="Votre message"
-                  style="width: 95%"
-                ></textarea>
-              </div>
-              <button style="width: 100%">ENVOYEZ</button>
-            </form>
-          </div>
-        </article>
-      </section>
+          <form action="">
+            <div style="display: flex; justify-content: space-between">
+              <label for="surname"></label>
+              <input type="text" placeholder="Prénom"/>
+              <label for="name"></label>
+              <input type="text" placeholder="Nom"/>
+            </div>
+            <div>
+              <label for="Email"></label>
+              <input type="email" placeholder="Email"/>
+            </div>
+            <div>
+              <label for="message"></label>
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="15"
+                placeholder="Votre message"
+              ></textarea>
+            </div>
+            <button>ENVOYEZ</button>
+          </form>
+        </section>
+      </article>
     </main>
-    <img src="../assets/img/wave-contact.svg" alt="" class="wave-line sd-wave" />
-    <a href="https://github.com/cnahornyj/" target="_blank"><img src="../assets/img/github.svg" alt="" class="social-media-logo contact-logo-github"></a>
-    <a href="https://www.linkedin.com/in/claranahornyj/" target="_blank"><img src="../assets/img/linkedin.svg" alt="" class="social-media-logo contact-logo-linkedin"></a>
+    <img
+      src="../assets/img/wave-contact.svg"
+      alt=""
+      class="wave-line sd-wave"
+    />
+    <a href="https://github.com/cnahornyj/" target="_blank"
+      ><img
+        src="../assets/img/github.svg"
+        alt=""
+        class="social-media-logo contact-logo-github"
+    /></a>
+    <a href="https://www.linkedin.com/in/claranahornyj/" target="_blank"
+      ><img
+        src="../assets/img/linkedin.svg"
+        alt=""
+        class="social-media-logo contact-logo-linkedin"
+    /></a>
     <script src="../js/nav.js"></script>
   </body>
 </html>
