@@ -185,6 +185,14 @@ button {
     rgba(178, 160, 129, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+  transition: .5s;
+}
+
+button:hover {
+  border: 0;
+  box-shadow: 1px 1px 5px 1px rgb(136, 136, 136);
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 button a {
@@ -198,20 +206,19 @@ path {
   fill: white;
 }
 
-.social-media-logo {
+img.social-media-logo {
   width: 60px;
 }
 
 .aboutme-linkedin {
   position: relative;
   left: 55%;
-  bottom: 130px;
+  top: 15px;
 }
 
 .aboutme-github {
   position: relative;
   left: 46%;
-  bottom: 145px;
 }
 
 .contact-logo-linkedin,
@@ -239,11 +246,10 @@ path {
   display: flex;
 }
 
-#aboutme p {
+#aboutme p{
   font-family: "Agrandir Thin";
   font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding-right: 40px;
   text-align: justify;
   line-height: 1.5;
@@ -253,6 +259,11 @@ path {
   position: relative;
   bottom: 10px;
   margin-top: 15px;
+  z-index: 1;
+}
+
+#aboutme h1 {
+  margin-bottom: 15px;
 }
 
 img#profile-pic {
@@ -260,6 +271,11 @@ img#profile-pic {
   height: 500px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+img.wave-line {
+  position: fixed;
+  bottom: 0;
 }
 
 .dropdown {
