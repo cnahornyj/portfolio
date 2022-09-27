@@ -47,10 +47,10 @@ async function renderAchievements() {
     demoLink.innerText = "▶ DEMO";
     codeLink.innerText = "‹/› CODE SOURCE";
 
-    card.setAttribute("class", "card");
+    card.setAttribute("class", "achievement");
     image.setAttribute("class", "img-achievement");
-    description.setAttribute("class", "description_project");
-    container.setAttribute("class", "container");
+    description.setAttribute("class", "resume");
+    container.setAttribute("class", "description");
     btns.setAttribute("class", "btnsAchievement");
     demoBtn.classList.add("btnAch", "demo");
     codeBtn.classList.add("btnAch", "code");
@@ -139,10 +139,10 @@ async function renderAchievements() {
       demoLink.innerText = "▶ DEMO";
       codeLink.innerText = "‹/› CODE SOURCE";
 
-      card.setAttribute("class", "card");
+      card.setAttribute("class", "achievement");
       image.setAttribute("class", "img-achievement");
-      description.setAttribute("class", "description_project");
-      container.setAttribute("class", "container");
+      description.setAttribute("class", "resume");
+      container.setAttribute("class", "description");
       btns.setAttribute("class", "btnsAchievement");
       demoBtn.classList.add("btnAch", "demo");
       codeBtn.classList.add("btnAch", "code");

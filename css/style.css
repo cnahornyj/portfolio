@@ -321,7 +321,7 @@ img#profile-pic {
   border-bottom: 1px solid white;
 }
 
-li[role=button] {
+li[role="button"] {
   font-family: "Agrandir Thin";
   font-weight: bold;
   padding: 10px 0px;
@@ -341,8 +341,19 @@ li[role=button] {
   max-height: 15rem;
 }
 
+#titleAchievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
 #filtersSelected {
   height: 30px;
+}
+
+article section h2 {
+  text-align: center;
 }
 
 .filter:first-child {
@@ -374,28 +385,27 @@ li[role=button] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 25px 0 75px;
+  margin-top: 40px;
   color: #3c4244;
 }
 
-.card {
+.achievement {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   transition: 0.3s;
   width: 275px;
   height: 325px;
-  margin: 25px 25px 0 0;
+  margin-bottom: 25px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border: 0.5px solid #b3a9a961;
 }
 
-.card:hover {
+.achievement:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
+.description {
   padding: 2px 10px;
-  text-align: left;
   letter-spacing: initial;
 }
 
@@ -416,7 +426,9 @@ li[role=button] {
   transition-timing-function: ease;
 }
 
-#languages {
+/* Partie concernant les languages affichés sur les réalisations */
+
+/* #languages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -433,9 +445,9 @@ li[role=button] {
   border-radius: 50px;
   margin-right: 10px;
   padding: 5px 10px;
-}
+} */
 
-.description_project {
+.resume {
   font-size: 14px;
   font-family: "Agrandir Thin";
   margin: 10px 0;
@@ -471,6 +483,11 @@ form {
   border-radius: 10px;
 }
 
+#nameContact {
+  display: flex;
+  justify-content: space-between;
+}
+
 form button {
   width: 100%;
 }
@@ -496,6 +513,15 @@ textarea {
 ::placeholder {
   font-weight: bold;
   color: #b2a081;
+}
+
+@media (max-width: 700px) {
+  #achievements {
+    justify-content: center;
+  }
+  .achievement {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 1190px) {
