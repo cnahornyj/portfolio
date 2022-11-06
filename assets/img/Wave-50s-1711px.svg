@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: #fdfdfd; display: block; z-index: 1; position: relative; shape-rendering: crispedges;" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 1711 538">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: #fdfdfd; display: block; z-index: 1; position: relative; shape-rendering: crispedges; overflow: hidden;" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 1711 538">
 <g transform="translate(855.5,269) scale(1,-1) translate(-855.5,-269)"><linearGradient id="lg-0.7649016021780122" x1="0" x2="1" y1="0" y2="0">
   <stop stop-color="#c1ae8c" offset="0"></stop>
   <stop stop-color="#a9997d" offset="1"></stop>
