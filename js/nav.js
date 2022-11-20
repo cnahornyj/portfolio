@@ -5,14 +5,14 @@ const list = document.querySelector("nav:nth-child(2)");
 
 function toggleListVisibility(e) {
   if (e.type === "click") {
-    list.classList.toggle("navIsOpen");
+    list.classList.toggle("navOpen");
   }
 }
 
 image.addEventListener("click", (e) => toggleListVisibility(e));
 
 function closeList() {
-  list.classList.remove("navIsOpen");
+  list.classList.remove("navOpen");
 }
 
 function myFunction(x) {
