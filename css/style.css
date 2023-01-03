@@ -580,6 +580,7 @@ textarea {
   color: #b2a081;
 }
 
+/*
 @media (max-width: 1375px) {
   #aboutme > svg {
     display: none;
