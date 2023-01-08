@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Clara Nahornyj Portfolio</title>
-  </head>
-  <body>
-    <main style="display: flex; letter-spacing: 1.5px">
-      <section style="width: 50%">
-        <h2 style="text-align: center; margin-top: 5%">PORTFOLIO</h2>
-        <h1
-          style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Clara Nahornyj Portfolio</title>
+</head>
+<body id="accueil">
+  <main style="display: flex; letter-spacing: 1.5px">
+    <section id="presentation" style="width: 50%">
+      <h2 style="text-align: center; margin-top: 5%">PORTFOLIO</h2>
+      <h1 style="
             font-family: 'Bogart';
             font-size: 50px;
             text-align: center;
             line-height: 50px;
             margin-top: 35%;
-          "
-        >
-          Développeur web<br />
-          front-end
-        </h1>
-        <article
-          style="
+          ">
+        Développeur web<br />
+        front-end
+      </h1>
+      <article style="
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             font-weight: bold;
             margin-top: 30%;
-          "
-        >
+          ">
+        <p style="margin-right: 50px">CLARA NAHORNYJ</p>
+        <a href="achievements.html" style="text-decoration: none; color: black; margin-left: 50px">DECOUVREZ MON
+          TRAVAIL</a>
+      </article>
+    </section>
+    <img src="assets/img/img.png" id="img-accueil-desktop" style="width: 50%" />
+    <!-- Partie responsive -->
+    <section id="presentation-mobile" style="width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 675px;
+    background: #ffffffd1;">
+      <div style="display: flex; flex-direction: column;">
+        <h2 style="text-align: center; margin-top: 5%">PORTFOLIO</h2>
+        <h1 style="
+            font-family: 'Bogart';
+            font-size: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 20%;
+          ">
+          Développeur web<br />
+          front-end
+        </h1>
+        <article style="
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: bold;
+        margin-top: 25%;
+        ">
           <p style="margin-right: 50px">CLARA NAHORNYJ</p>
-          <a
-            href="achievements.html"
-            style="text-decoration: none; color: black; margin-left: 50px"
-            >DECOUVREZ MON TRAVAIL</a
-          >
+          <a href="achievements.html" style="text-decoration: none; color: black; margin-left: 50px; border-bottom: 0.5px solid black;
+          padding-bottom: 1px;">DECOUVREZ MON
+            TRAVAIL</a>
         </article>
-      </section>
-      <img src="assets/img/img.png" style="width: 50%" />
-    </main>
-    <script src="../js/nav.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="../js/nav.js"></script>
+</body>
+
 </html>
