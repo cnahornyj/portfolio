@@ -132,175 +132,6 @@ nav:nth-child(2) a:hover {
   opacity: 1 !important;
   background-color: #b2a081;
 }
-/*
-
-main {
-  width: 70%;
-  margin: auto;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-family: "Agrandir Thin";
-  color: #3c4244;
-}
-
-h3 {
-  margin: 10px 0;
-}
-
-p {
-  font-size: 1.25em;
-  margin: 0;
-}
-
-article {
-  margin-top: 125px;
-}
-
-button {
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px 15px;
-  color: white;
-  border: 1px solid #b2a081;
-  background: rgb(178, 160, 129);
-  background: linear-gradient(
-    90deg,
-    rgba(178, 160, 129, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  transition: 0.5s;
-}
-
-button:hover {
-  border: 0;
-  box-shadow: 1px 1px 5px 1px rgb(136, 136, 136);
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-
-button a {
-  font-family: "League Spartan Lgt";
-  font-size: 18px;
-  padding: 0 15px;
-  color: white;
-}
-
-path {
-  fill: white;
-}
-
-img.social-media-logo {
-  width: 60px;
-}
-
-.aboutme-linkedin {
-  position: relative;
-  left: 55%;
-  top: 15px;
-}
-
-.aboutme-github {
-  position: relative;
-  left: 46%;
-}
-
-.contact-logo-linkedin,
-.contact-logo-github {
-  position: relative;
-  left: 75%;
-}
-
-.contact-logo-linkedin {
-  bottom: -75px;
-}
-
-.contact-logo-github{
-  bottom: -70px;
-}
-
-#waves {
-  width: 100%;
-}
-
-#presentation {
-  margin-top: 250px;
-  text-align: center;
-}
-
-#presentation > h1 {
-  letter-spacing: initial;
-  color: #2f2e2e;
-  margin-bottom: 0px;
-}
-
-#presentation > h2 {
-  font-size: 1.75em;
-  margin-top: 5px;
-}
-
-#presentation > button {
-  width: 445px;
-}
-
-#aboutme {
-  display: flex;
-}
-
-#aboutme h1 {
-  margin-top: 0px;
-}
-
-#aboutme p {
-  font-family: "Agrandir Thin";
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-align: justify;
-  line-height: 1.6;
-}
-
-#aboutme button {
-  position: relative;
-  bottom: 10px;
-  margin-top: 15px;
-  z-index: 1;
-}
-
-#aboutme > div > img {
-  width: 500px;
-  height: 650px;
-  position: fixed;
-  bottom: 0;
-  right: 100px;
-}
-
-#aboutme > img {
-  display: none;
-}
-
-#aboutme > svg {
-  fill:rgba(178, 160, 129, 1);
-  z-index: -1;
-  position: fixed;
-  width: 600px;
-  right: -120px;
-}
-
-#aboutme > div:first-child {
-  margin-right: 25px;
-  width:70%;
-}
-
-#aboutme > div:nth-child(2) {
-  width: 30%;
-}
-
-*/
 
 .dropdown {
   list-style: none;
@@ -390,7 +221,10 @@ li[role="button"] {
   overflow: auto;
   max-height: 15rem;
 }
-*/
+
+#accueil-mobile { 
+  display: none;
+}
 
 #titleAchievements {
   display: flex;
@@ -477,27 +311,6 @@ article section h2 {
   filter: grayscale(60%);
 }
 
-/* Partie concernant les languages affichés sur les réalisations */
-
-/* #languages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.language {
-  font-family: "Agrandir Thin";
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  background: #6a6a6a;
-  border: 1px solid #595858;
-  border-radius: 50px;
-  margin-right: 10px;
-  padding: 5px 10px;
-} */
-
 .resume {
   font-size: 16px;
   font-family: "Montserrat";
@@ -506,10 +319,12 @@ article section h2 {
   font-weight: bold;
 }
 
+
 .btnsAchievement {
   display: flex;
   justify-content: space-around;
 }
+
 
 .btnAch {
   width: 45%;
@@ -528,174 +343,54 @@ article section h2 {
   text-decoration: none;
 }
 
-.contactme{
-  margin-bottom: -60px;
+#presentation-mobile {
+  display: none;
 }
 
-#contact-text {
+#text-contact {
   width: 50%;
 }
 
-iframe {
-  width: -webkit-fill-available;
+#text-contact > article {
+  margin-top: 15%;
 }
 
-form {
-  width: 35%;
-  padding: 20px;
-  border-radius: 10px;
-  margin: auto;
-  background: #f4f0eb;
+#text-contact > h2 {
+  color: floralwhite;
 }
 
-#nameContact {
-  display: flex;
-  justify-content: space-between;
-}
-
-form button {
-  width: 100%;
-}
-
-input,
-textarea {
-  font-family: "Agrandir Thin";
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
-}
-
-input[type="text"] {
-  width: 50%;
-}
-
-input[type="email"],
-textarea {
-  width: 95%;
-}
-
-::placeholder {
-  font-weight: bold;
-  color: #b2a081;
-}
-
-/*
-@media (max-width: 1375px) {
-  #aboutme > svg {
-    display: none;
-  }
-  #aboutme > div > img {
-    right: 50px;
-  }
-}
-
-@media (max-width: 1190px) {
-  nav:first-child > ul,
-  main {
-    width: 80%;
-  }
-  #aboutme > div > img {
-    right: 0;
-  }
-  p{
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 1100px) {
-  #aboutme > svg, #aboutme > div > img {
-    display: none;
-  }
-  #aboutme {
-    display: block;
-  }
-  #aboutme > div:first-child {
-    width:100%;
-  }
-  #aboutme > div:nth-child(2) {
-    width: 0;
-  }
-  #aboutme > img {
-    display: block;
-    width: 50%;
-    margin: 25px 0 25px 0;
-  }
-  #contact-text {
-    width: 100%;
-  }
-  iframe {
-    display: none;
-  }
-  form {
-    width: 50%;
-    margin: 0;
-  }
-}
-
-@media (max-width: 1510px) {
- #waves {
-    position: fixed;
-    bottom: 0;
-  }
-}
-
-@media (max-width: 1020px) {
-  nav:first-child > ul {
-    width: 95%;
-  }
-  main {
-    width: 95%;
-  }
+#trait_dessous {
+  border-top: 1px solid #000;
 }
 
 @media (max-width: 1000px) {
-  /* voir pour le svg bottom 0 */
-}
-
-@media (max-width: 895px) {
-  h2 {
-    font-size: 1.3em;
+  #accueil{
+    background-image: url("../assets/img/img-blur.jpg");
+    background-size: cover;
   }
-  article {
-    margin-top: 30px;
+  #contact {
+    background-image: url("../assets/img/contact-img-blur.jpg");
+    background-size: cover;
   }
-  #aboutme {
-    flex-direction: column;
-    align-items: center;
+  #presentation, #img-accueil-desktop, #img-contact-desktop {
+    display: none;
   }
-}
-
-@media (max-width: 740px) {
-  h2 {
-    font-size: 1em;
+  #presentation-mobile {
+    display: block;
   }
-}
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: 1.5em;
+  #responsibleNav {
+    background-color: #2f2e2e;
   }
-  form {
-    width: 90%;
-    margin: 0;
-  }
-  #achievements {
-    justify-content: center;
-  }
-  .achievement {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 584px) {
-  h2 {
-    font-size: 0.75em;
-  }
-}
-
-@media (max-width: 500px) {
-  #aboutme > img {
+  #text-contact {
     width: 100%;
   }
-} */
+  #text-contact > article {
+    margin-top: 10%;
+  }
+  #text-contact #trait_dessous {
+    border-top: 1px solid antiquewhite;
+  }
+  #text-contact h2 {
+    color: antiquewhite;
+  }
+}
