@@ -17,49 +17,10 @@
           CLARA<br />
         NAHORNYJ
         </li>
-        <li id="espacement-nav">
-          <a
-            href="index.html"
-            style="
-              text-decoration: none;
-              color: white;
-              margin-right: 75px;
-              font-weight: bold;
-            "
-            >ACCUEIL</a
-          >
-        </li>
-        <li>
-          <a
-            href="aboutme.html"
-            style="
-              text-decoration: none;
-              color: white;
-              margin-right: 75px;
-              font-weight: bold;
-            "
-            >A PROPOS</a
-          >
-        </li>
-        <li>
-          <a
-            href="achievements.html"
-            style="
-              text-decoration: none;
-              color: white;
-              margin-right: 75px;
-              font-weight: bold;
-            "
-            >MES PROJETS</a
-          >
-        </li>
-        <li>
-          <a
-            href="contactme.html"
-            style="text-decoration: none; color: white; font-weight: bold" id="sans-marge"
-            >CONTACT</a
-          >
-        </li>
+        <li id="espacement-nav"><a href="index.html">ACCUEIL</a></li>
+        <li><a href="aboutme.html">A PROPOS</a></li>
+        <li><a href="achievements.html">MES PROJETS</a></li>
+        <li><a href="contactme.html" id="sans-marge">CONTACT</a></li>
       </ul>
     </nav>
     <section id="section-nav-mobile">
@@ -76,64 +37,29 @@
           role="button"
           id="icon-menu"
         />
-        <nav id="responsible-navigation">
+        <nav>
           <ul>
-            <li><a href="index.html" class="location">Accueil</a></li>
-            <li><a href="aboutme.html" class="location">A propos</a></li>
-            <li>
-              <a href="achievements.html" class="location">Mes projets</a>
-            </li>
-            <li><a href="contactme.html" class="location">Contact</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="aboutme.html">A propos</a></li>
+            <li><a href="achievements.html">Mes projets</a></li>
+            <li><a href="contactme.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </section>
-    <main style="width: 90%; margin: 8% auto">
+    <main id="main-achievements">
       <article>
-        <section>
-          <h2
-            style="
-              font-size: 1.25em;
-              font-weight: bold;
-              text-align: center;
-              line-height: 1.5;
-              letter-spacing: 0.25px;
-            "
-          >
-            Le métier de développeur est à mon sens un métier à part entière
-            :<br />
-            il faut sans cesse être curieux et polyvalent pour l'exercer.
-          </h2>
-          <div style="display: flex; align-items: center">
-            <div
-              id="trait_dessous"
-              style="width: 43.75%"
-            ></div>
-            <h1
-              style="
-                font-family: 'Bogart';
-                font-size: 1.5em;
-                width: 25%;
-                text-align: center;
-              "
-            >
-              Mes réalisations
-            </h1>
-            <div
-              id="trait_dessous"
-              style="width: 43.75%"
-            ></div>
+        <section id="achievements">
+          <h2>Le métier de développeur est à mon sens un métier à part entière
+            :<br /> il faut sans cesse être curieux et polyvalent pour l'exercer.</h2>
+          <div>
+            <div id="trait_dessus"></div>
+            <h1>Mes réalisations</h1>
+            <div id="trait_dessus" ></div>
           </div>
-          <div
-            id="titleAchievements"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <section id="filtersSelected"></section>
-            <section id="filters">
+          <div>
+            <section id="filtres-selectionnes"></section>
+            <section id="filtres">
               <ul class="dropdown">
                 <li
                   role="button"
@@ -166,7 +92,7 @@
               </ul>
             </section>
           </div>
-          <article id="achievements"></article>
+          <article id="projets"></article>
         </section>
       </article>
     </main>
