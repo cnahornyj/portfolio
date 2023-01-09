@@ -48,53 +48,51 @@
       </div>
     </section>
     <main id="main-achievements">
-      <article>
-        <section id="achievements">
-          <h2>Le métier de développeur est à mon sens un métier à part entière
-            :<br /> il faut sans cesse être curieux et polyvalent pour l'exercer.</h2>
-          <div>
-            <div id="trait_dessus"></div>
-            <h1>Mes réalisations</h1>
-            <div id="trait_dessus" ></div>
+      <section>
+        <h2>Le métier de développeur est à mon sens un métier à part entière
+          :<br /> il faut sans cesse être curieux et polyvalent pour l'exercer.</h2>
+        <article id="titre">
+          <div class="trait_dessus"></div>
+          <h1>Mes réalisations</h1>
+          <div class="trait_dessus" ></div>
+        </article>
+        <article id="recherche">
+          <div id="filtres-selectionnes"></div>
+          <div id="filtres">
+            <ul class="dropdown">
+              <li
+                role="button"
+                aria-labelledby="dropdown-label"
+                class="selected"
+                tabindex="0"
+              >
+                Choississez un filtre
+              </li>
+              <!-- Choississez un domaine, framework (précisez sur quoi portent les filtres)-->
+              <svg
+                class="arrow"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill-rule="evenodd"
+              >
+                <title>Open drop down</title>
+                <path d="M10 0L5 5 0 0z"></path>
+              </svg>
+              <li aria-expanded="false" role="list" class="list-container">
+                <ul class="list">
+                  <li class="item">Accessibilité</li>
+                  <li class="item">MongoDB</li>
+                  <li class="item">React</li>
+                  <li class="item">Redux</li>
+                  <li class="item">SEO</li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div>
-            <section id="filtres-selectionnes"></section>
-            <section id="filtres">
-              <ul class="dropdown">
-                <li
-                  role="button"
-                  aria-labelledby="dropdown-label"
-                  class="selected"
-                  tabindex="0"
-                >
-                  Choississez un filtre
-                </li>
-                <!-- Choississez un domaine, framework (précisez sur quoi portent les filtres)-->
-                <svg
-                  class="arrow"
-                  width="10"
-                  height="5"
-                  viewBox="0 0 10 5"
-                  fill-rule="evenodd"
-                >
-                  <title>Open drop down</title>
-                  <path d="M10 0L5 5 0 0z"></path>
-                </svg>
-                <li aria-expanded="false" role="list" class="list-container">
-                  <ul class="list">
-                    <li class="item">Accessibilité</li>
-                    <li class="item">MongoDB</li>
-                    <li class="item">React</li>
-                    <li class="item">Redux</li>
-                    <li class="item">SEO</li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          </div>
-          <article id="projets"></article>
-        </section>
-      </article>
+        </article>
+        <article id="projets"></article>
+      </section>
     </main>
     <script src="../js/script.js"></script>
     <script src="../js/nav.js"></script>
