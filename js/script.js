@@ -11,7 +11,7 @@ async function getAchievements() {
 async function renderAchievements() {
   let achievements = await getAchievements();
 
-  let achArticle = document.querySelector("#achievements");
+  let achArticle = document.querySelector("#projets");
   // let listOfAchievements = [];
 
   for (const achievement of achievements) {
@@ -61,7 +61,7 @@ async function renderAchievements() {
   const dropdownArrow = document.querySelector(".arrow");
   const listFrameworks = document.querySelectorAll(".item");
   const dropdownSelected = document.querySelector(".selected");
-  const filtersSelected = document.querySelector("#filtersSelected");
+  const filtersSelected = document.querySelector("#filtres-selectionnes");
 
   function toggleListVisibility(e) {
     if (e.type === "click") {
@@ -89,7 +89,7 @@ async function renderAchievements() {
   function createFilter(framework) {
     let filter = document.createElement("span");
     filter.innerHTML = framework;
-    filter.setAttribute("class", "filter");
+    filter.setAttribute("class", "filtre");
     filtersSelected.appendChild(filter);
   }
 
