@@ -61,6 +61,73 @@ nav:first-child ul li:first-child {
   margin: 0;
 }
 
+#section-nav-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section-nav-mobile > div:first-child {
+  padding-left: 20px;
+}
+
+#section-nav-mobile > div:nth-child(2) {
+  padding-right: 20px;
+}
+
+#icon-menu {
+  width: 64px;
+  height: 64px;
+  z-index: 2;
+}
+
+nav:nth-child(2) {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  background: #b2a081;
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
+}
+
+nav:nth-child(2) ul {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+nav:nth-child(2) li {
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+nav:nth-child(2) li:not(:last-child) {
+  border-bottom: solid;
+}
+
+nav:nth-child(2) a {
+  text-transform: uppercase;
+  font-family: Arial;
+  text-decoration: none;
+  color: white;
+}
+
+nav:nth-child(2) a:hover {
+  color: black;
+}
+
+.navOpen {
+  opacity: 1 !important;
+  background-color: #b2a081;
+}
+
+.open {
+  opacity: 1;
+  overflow: auto;
+  max-height: 15rem;
+}
+
 #presentation-mobile {
   display: none;
 }

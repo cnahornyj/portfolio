@@ -1,5 +1,5 @@
-let navigation = document.querySelector("nav");
-const responsiveNav = document.querySelector("#responsibleNav");
+let navigationDesktop = document.querySelector("nav");
+const sectionNavMobile = document.querySelector("#section-nav-mobile");
 const image = document.querySelector("#icon-menu");
 const list = document.querySelector("nav:nth-child(2)");
 
@@ -18,12 +18,12 @@ function closeList() {
 function myFunction(x) {
   if (x.matches) {
     /* Navbar responsive */
-    navigation.style.display = "none";
-    responsiveNav.style.display = "flex";
+    navigationDesktop.style.display = "none";
+    sectionNavMobile.style.display = "flex";
   } else {
     /* Navbar desktop */
-    navigation.style.display = "flex";
-    responsiveNav.style.display = "none";
+    navigationDesktop.style.display = "flex";
+    sectionNavMobile.style.display = "none";
   }
 }
 
