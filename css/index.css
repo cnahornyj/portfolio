@@ -66,22 +66,18 @@ nav:first-child ul li:first-child {
   justify-content: space-between;
   align-items: center;
 }
-
-#section-nav-mobile > div:first-child {
+#section-nav-mobile div:first-child {
   padding-left: 20px;
 }
-
-#section-nav-mobile > div:nth-child(2) {
+#section-nav-mobile div:nth-child(2) {
   padding-right: 20px;
 }
-
-#icon-menu {
+#section-nav-mobile div:nth-child(2) #icon-menu {
   width: 64px;
   height: 64px;
   z-index: 2;
 }
-
-nav:nth-child(2) {
+#section-nav-mobile nav {
   width: 100%;
   position: absolute;
   left: 0;
@@ -90,30 +86,25 @@ nav:nth-child(2) {
   background: #b2a081;
   transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
 }
-
-nav:nth-child(2) ul {
+#section-nav-mobile nav ul {
   padding: 0 10px;
   font-weight: bold;
 }
-
-nav:nth-child(2) li {
+#section-nav-mobile nav ul li {
   color: white;
   margin: 0;
   padding: 10px;
 }
-
-nav:nth-child(2) li:not(:last-child) {
+#section-nav-mobile nav ul li:not(:last-child) {
   border-bottom: solid;
 }
-
-nav:nth-child(2) a {
+#section-nav-mobile nav ul li a {
   text-transform: uppercase;
   font-family: Arial;
   text-decoration: none;
   color: white;
 }
-
-nav:nth-child(2) a:hover {
+#section-nav-mobile nav ul li a:hover {
   color: black;
 }
 
