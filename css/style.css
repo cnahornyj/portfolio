@@ -131,7 +131,7 @@ nav:nth-child(2) a:hover {
 .navOpen {
   opacity: 1 !important;
   background-color: #b2a081;
-} 
+} */
 
 .dropdown {
   list-style: none;
@@ -144,7 +144,7 @@ nav:nth-child(2) a:hover {
   height: 41px;
   cursor: pointer;
   padding: 0;
-}*/
+}
 
 .arrow {
   color: white;

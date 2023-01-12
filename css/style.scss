@@ -231,7 +231,7 @@ nav:first-child {
                 height: 30px;
             }
             #filtres {
-                ul {
+                ul.dropdown {
                     list-style: none;
                     position: relative;
                     border: 1px solid #b2a081;
@@ -242,23 +242,55 @@ nav:first-child {
                     height: 41px;
                     cursor: pointer;
                     padding: 0;
-                    font-family: "Montserrat";
                     margin: 0;
-                    padding: 0;
-                    li {
+                    font-family: "Montserrat";
+                    li.selected {
                         color: white;
                         background-color: #b2a081;
                     }
-                }
-                svg {
-                    color: white;
-                    position: absolute;
-                    right: 10px;
-                    top: 50%;
-                    transition: transform 0.2s linear;
-                }
+                    svg {
+                        color: white;
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transition: transform 0.2s linear;                   
+                    }
+                    li.list-container {
+                        position: relative;
+                        ul.list {
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9),
+                                max-height 0.5s cubic-bezier(0, 0, 0.38, 0.9);
+                            max-height: 0;
+                            overflow: hidden;
+                            opacity: 0;
+                            z-index: 1;
+                            li {
+                                padding: 7px 0 5px 15px;
+                                border-bottom: 1px solid white;
+                                &:hover {
+                                    font-weight: bold;
+                                    background: whitesmoke;
+                                    color: #61543d;
+                                }
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+                            }
+                        } 
+                    }
+                }                
                 .expanded {
                     transform: rotate(-180deg);
+                } 
+                .open {
+                    opacity: 1;
+                    overflow: auto;
+                    max-height: 15rem;
                 }
                 .filtre {
                     font-family: "Montserrat";
@@ -273,34 +305,6 @@ nav:first-child {
                     &:not(:first-child) {
                         margin: 0 10px;
                     }
-                }
-                .list-container {
-                    position: relative;
-                    .list {
-                        width: 100%;
-                        position: absolute;
-                        left: 0;
-                        border-bottom-left-radius: 5px;
-                        border-bottom-right-radius: 5px;
-                        transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9),
-                            max-height 0.5s cubic-bezier(0, 0, 0.38, 0.9);
-                        max-height: 0;
-                        overflow: hidden;
-                        opacity: 0;
-                        z-index: 1;
-                        li {
-                            padding: 7px 0 5px 15px;
-                            border-bottom: 1px solid white;
-                            &:hover {
-                                font-weight: bold;
-                                background: whitesmoke;
-                                color: #61543d;
-                            }
-                            &:last-child {
-                                border-bottom: none;
-                            }
-                        }
-                    }                   
                 }
             }
         }
