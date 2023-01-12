@@ -12,8 +12,7 @@ async function renderAchievements() {
   let achievements = await getAchievements();
 
   let achArticle = document.querySelector("#projets");
-  // let listOfAchievements = [];
-
+  
   for (const achievement of achievements) {
     let card = document.createElement("div");
     let image = document.createElement("img");
@@ -54,17 +53,17 @@ async function renderAchievements() {
     btns.setAttribute("class", "boutons-projets");
   }
 
-  const list = document.querySelector(".list");
-  const listContainer = document.querySelector(".list-container");
-  const dropdownArrow = document.querySelector(".arrow");
+  const list = document.querySelector(".liste"); 
+  const listContainer = document.querySelector(".list-container"); // #list-container
+  const fleche = document.querySelector(".arrow");
   const listFrameworks = document.querySelectorAll(".item");
-  const dropdownSelected = document.querySelector(".selected");
+  const dropdownSelected = document.querySelector(".selected"); // #selected
   const filtersSelected = document.querySelector("#filtres-selectionnes");
 
   function toggleListVisibility(e) {
     if (e.type === "click") {
       list.classList.toggle("open");
-      dropdownArrow.classList.toggle("expanded");
+      fleche.classList.toggle("expanded");
       listContainer.setAttribute(
         "aria-expanded",
         list.classList.contains("open")
@@ -79,7 +78,7 @@ async function renderAchievements() {
   // close dropdown list
   function closeList() {
     list.classList.remove("open");
-    dropdownArrow.classList.remove("expanded");
+    fleche.classList.remove("expanded");
     listContainer.setAttribute("aria-expanded", false);
   }
 
