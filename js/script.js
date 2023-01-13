@@ -54,10 +54,10 @@ async function renderAchievements() {
   }
 
   const list = document.querySelector(".liste"); 
-  const listContainer = document.querySelector(".list-container"); // #list-container
-  const fleche = document.querySelector(".arrow");
+  const listContainer = document.querySelector("#list-container"); // #list-container
+  const fleche = document.querySelector("#arrow");
   const listFrameworks = document.querySelectorAll(".item");
-  const dropdownSelected = document.querySelector(".selected"); // #selected
+  const dropdownSelected = document.querySelector("#selected"); // #selected
   const filtersSelected = document.querySelector("#filtres-selectionnes");
 
   function toggleListVisibility(e) {
@@ -102,7 +102,7 @@ async function renderAchievements() {
         }
       }
     }
-    console.log(listOfAchievements);
+
     for (const achievement of listOfAchievements) {
       let card = document.createElement("div");
       let image = document.createElement("img");
@@ -142,31 +142,12 @@ async function renderAchievements() {
       container.setAttribute("class", "description");
       btns.setAttribute("class", "boutons-projets");
     }
-
-    /*
-    let arrOfLanguages = [];
-    for (const achievement of listOfAchievements) {
-      for (let i = 0; i < listOfAchievements.languages.length; i++) {
-        arrOfLanguages.push(listOfAchievements.languages[i]);
-      }
-    }
-    let arrayOfLanguages = [...new Set(arrOfLanguages)];
-    let selectFilter = document.querySelector(".list");
-    selectFilter.innerHTML = "";
-    for (let i = 0; i < arrayOfLanguages.length; i++) {
-      let option = document.createElement("li");
-      selectFilter.appendChild(option);
-      option.innerText = arrayOfLanguages[i];
-      option.setAttribute("class", "item");
-    }
-  */
   }
 
   // for every item in dropdown list of frameworks pass an event onclick
   for (const framework of listFrameworks) {
     framework.addEventListener("click", () => {
       let filter = framework.innerHTML;
-      //console.log(filter);
       closeList();
       createFilter(filter);
       applyFilter(filter);
