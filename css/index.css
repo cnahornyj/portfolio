@@ -7,6 +7,10 @@
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat-Thin.ttf");
 }
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
 body {
   font-family: "Montserrat", Arial;
   margin: 0;
@@ -39,11 +43,12 @@ nav:first-child ul li a {
   text-decoration: none;
   color: white;
   margin-right: 75px;
-  font-weight: bold;
+  font-family: "Montserrat-Medium";
 }
 nav:first-child ul li:first-child {
-  color: #C1AE8C;
+  font-family: "Montserrat";
   font-weight: bold;
+  color: #C1AE8C;
 }
 
 #espacement-nav {
@@ -59,9 +64,14 @@ nav:first-child ul li:first-child {
   display: none;
   justify-content: space-between;
   align-items: center;
+  background: rgb(33, 33, 33);
 }
 #section-nav-mobile div:first-child {
   padding-left: 20px;
+}
+#section-nav-mobile div:first-child span {
+  color: #C1AE8C;
+  font-family: "Montserrat-Medium";
 }
 #section-nav-mobile div:nth-child(2) {
   padding-right: 20px;
@@ -77,7 +87,7 @@ nav:first-child ul li:first-child {
   left: 0;
   margin: 0;
   opacity: 0;
-  background: #b2a081;
+  background: rgb(33, 33, 33);
   transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
 }
 #section-nav-mobile nav ul {
@@ -90,21 +100,19 @@ nav:first-child ul li:first-child {
   padding: 10px;
 }
 #section-nav-mobile nav ul li:not(:last-child) {
-  border-bottom: solid;
+  border-bottom: 1px solid;
 }
 #section-nav-mobile nav ul li a {
-  text-transform: uppercase;
   font-family: Arial;
   text-decoration: none;
   color: white;
 }
 #section-nav-mobile nav ul li a:hover {
-  color: black;
+  color: #C1AE8C;
 }
 
 .navOpen {
   opacity: 1 !important;
-  background-color: #b2a081;
 }
 
 #about-me {
@@ -224,6 +232,14 @@ nav:first-child ul li:first-child {
 #main-achievements article #recherche #filtres-selectionnes {
   height: 30px;
 }
+#main-achievements article #recherche #filtres-selectionnes .filtre {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #b2a081;
+  border: 1px solid #b2a081;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
 #main-achievements article #recherche #filtres-selectionnes .filtre:first-child {
   margin-right: 10px;
 }
@@ -314,7 +330,7 @@ nav:first-child ul li:first-child {
 #main-achievements article #projets .achievement {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 350px;
+  width: 340px;
   height: 400px;
   margin-bottom: 50px;
   border-top-left-radius: 10px;
@@ -373,6 +389,15 @@ nav:first-child ul li:first-child {
   overflow: auto !important;
 }
 
+@media (max-width: 840px) {
+  #main-achievements article #projets {
+    justify-content: center;
+  }
+  #main-achievements article #projets .achievement {
+    width: 375px;
+    height: 450px;
+  }
+}
 @media (max-width: 1000px) {
   #main-accueil section:first-child {
     display: none;
