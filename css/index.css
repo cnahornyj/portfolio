@@ -197,42 +197,54 @@ nav:first-child ul li:first-child {
   width: 50%;
 }
 
-#main-achievements {
-  width: 85%;
-  margin: 8% auto;
+#achievements {
+  background: white;
 }
-#main-achievements article h2 {
+#achievements #main-achievements {
+  width: 85%;
+  margin: auto;
+  margin-top: 8%;
+}
+#achievements #main-achievements article h2 {
   font-size: 1.25em;
-  font-weight: bold;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.25px;
 }
-#main-achievements article #titre {
+#achievements #main-achievements article #titre {
   display: flex;
   align-items: baseline;
   justify-content: center;
 }
-#main-achievements article #titre .trait_dessus {
+#achievements #main-achievements article #titre .trait_dessus {
   border-top: 1px solid grey;
   width: 40%;
 }
-#main-achievements article #titre h1 {
+#achievements #main-achievements article #titre h1 {
   font-family: "Bogart";
-  font-size: 1.5em;
+  font-size: 1.35em;
   width: 20%;
   text-align: center;
+  padding: 10px;
+  background: rgb(33, 33, 33);
+  color: white;
 }
-#main-achievements article #recherche {
+#achievements #main-achievements article #recherche, #achievements #main-achievements article #projets {
+  background: #f6f6f6;
+}
+#achievements #main-achievements article #recherche {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  border-right: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  margin-top: -42px;
+  padding: 40px;
 }
-#main-achievements article #recherche #filtres-selectionnes {
+#achievements #main-achievements article #recherche #filtres-selectionnes {
   height: 30px;
 }
-#main-achievements article #recherche #filtres-selectionnes .filtre {
+#achievements #main-achievements article #recherche #filtres-selectionnes .filtre {
   font-family: "Montserrat";
   font-weight: bold;
   color: #b2a081;
@@ -240,26 +252,26 @@ nav:first-child ul li:first-child {
   border-radius: 15px;
   padding: 5px 10px;
 }
-#main-achievements article #recherche #filtres-selectionnes .filtre:first-child {
+#achievements #main-achievements article #recherche #filtres-selectionnes .filtre:first-child {
   margin-right: 10px;
 }
-#main-achievements article #recherche #filtres-selectionnes .filtre:not(:first-child) {
+#achievements #main-achievements article #recherche #filtres-selectionnes .filtre:not(:first-child) {
   margin: 0 10px;
 }
-#main-achievements article #recherche #filtres .dropdown {
+#achievements #main-achievements article #recherche #filtres .dropdown {
   list-style: none;
   position: relative;
   border: 1px solid #b2a081;
   background-color: #b2a081;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  width: 250px;
+  width: 325px;
   height: 41px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
-#main-achievements article #recherche #filtres .dropdown li[role=button] {
+#achievements #main-achievements article #recherche #filtres .dropdown li[role=button] {
   font-family: "Montserrat";
   font-weight: bold;
   padding: 10px 0px;
@@ -272,24 +284,24 @@ nav:first-child ul li:first-child {
   color: white;
   background-color: #b2a081;
 }
-#main-achievements article #recherche #filtres .dropdown .selected {
+#achievements #main-achievements article #recherche #filtres .dropdown .selected {
   color: white;
   background-color: #b2a081;
 }
-#main-achievements article #recherche #filtres .dropdown #arrow {
+#achievements #main-achievements article #recherche #filtres .dropdown #arrow {
   color: white;
   position: absolute;
   right: 10px;
   top: 50%;
   transition: transform 0.2s linear;
 }
-#main-achievements article #recherche #filtres .dropdown .expanded {
+#achievements #main-achievements article #recherche #filtres .dropdown .expanded {
   transform: rotate(-180deg);
 }
-#main-achievements article #recherche #filtres .dropdown #list-container {
+#achievements #main-achievements article #recherche #filtres .dropdown #list-container {
   position: relative;
 }
-#main-achievements article #recherche #filtres .dropdown #list-container .liste {
+#achievements #main-achievements article #recherche #filtres .dropdown #list-container .liste {
   list-style-type: none;
   width: 100%;
   position: absolute;
@@ -306,28 +318,32 @@ nav:first-child ul li:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-#main-achievements article #recherche #filtres .dropdown #list-container .liste li {
+#achievements #main-achievements article #recherche #filtres .dropdown #list-container .liste li {
   color: white;
   font-weight: bold;
   padding: 7px 0 5px 15px;
   border-bottom: 1px solid white;
 }
-#main-achievements article #recherche #filtres .dropdown #list-container .liste li:hover {
+#achievements #main-achievements article #recherche #filtres .dropdown #list-container .liste li:hover {
   font-weight: bold;
   background: whitesmoke;
   color: #61543d;
 }
-#main-achievements article #recherche #filtres .dropdown #list-container .liste li:last-child {
+#achievements #main-achievements article #recherche #filtres .dropdown #list-container .liste li:last-child {
   border-bottom: none;
 }
-#main-achievements article #projets {
+#achievements #main-achievements article #projets {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
+  border-left: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
   color: #3c4244;
+  margin-bottom: 5%;
+  padding: 0 40px;
 }
-#main-achievements article #projets .achievement {
+#achievements #main-achievements article #projets .achievement {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 325px;
@@ -338,48 +354,48 @@ nav:first-child ul li:first-child {
   border: 0.5px solid rgba(41, 47, 47, 0.2117647059);
   background: #E1D8CF;
 }
-#main-achievements article #projets .achievement img {
+#achievements #main-achievements article #projets .achievement img {
   width: 100%;
   height: 50%;
-  border-bottom: 1px solid navajowhite;
+  border-bottom: 1px solid whitesmoke;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   filter: grayscale(25%);
 }
-#main-achievements article #projets .achievement:hover {
+#achievements #main-achievements article #projets .achievement:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-#main-achievements article #projets .achievement .description {
+#achievements #main-achievements article #projets .achievement .description {
   padding: 7px 20px;
   letter-spacing: initial;
 }
-#main-achievements article #projets .achievement .description h3 {
+#achievements #main-achievements article #projets .achievement .description h3 {
   font-family: "Bogart";
   margin-bottom: 0px;
 }
-#main-achievements article #projets .achievement .description p {
+#achievements #main-achievements article #projets .achievement .description p {
   font-size: 14px;
   font-family: "Montserrat";
   line-height: 1.5;
   font-weight: bold;
   margin-top: 2px;
 }
-#main-achievements article #projets .achievement .boutons-projets {
+#achievements #main-achievements article #projets .achievement .boutons-projets {
   display: flex;
   justify-content: space-around;
 }
-#main-achievements article #projets .achievement .boutons-projets button {
+#achievements #main-achievements article #projets .achievement .boutons-projets button {
   background: rgb(33, 33, 33);
   padding: 10px;
   border: 1px solid #646b62;
   border-radius: 20px;
   width: 140px;
 }
-#main-achievements article #projets .achievement .boutons-projets button:hover {
+#achievements #main-achievements article #projets .achievement .boutons-projets button:hover {
   background: #141414;
   transform: scale(1.02);
 }
-#main-achievements article #projets .achievement .boutons-projets button a {
+#achievements #main-achievements article #projets .achievement .boutons-projets button a {
   font-family: "Bogart";
   text-decoration: none;
   color: white;
@@ -391,16 +407,13 @@ nav:first-child ul li:first-child {
   overflow: auto !important;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 890px) {
+  #main-achievements article h2 {
+    width: 90% !important;
+    margin: auto !important;
+  }
   #main-achievements article #projets {
     justify-content: center;
-  }
-  #main-achievements article #projets .achievement {
-    width: 350px;
-    height: 400px;
-  }
-  #main-achievements article #projets .achievement .description {
-    padding-top: 10px;
   }
 }
 @media (max-width: 1000px) {
@@ -443,6 +456,27 @@ nav:first-child ul li:first-child {
   }
   #text-contact #trait_dessous {
     border-top: 1px solid antiquewhite;
+  }
+}
+@media (max-width: 1150px) {
+  #main-achievements article h2 {
+    margin-top: 12% !important;
+  }
+  #main-achievements article #recherche #filtres .dropdown {
+    width: 375px;
+  }
+  #main-achievements article #projets .achievement {
+    width: 375px;
+    height: 425px;
+  }
+  #main-achievements article #projets .achievement .description {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1460px) {
+  #main-achievements article h2 {
+    width: 60%;
+    margin: auto;
   }
 }
 
