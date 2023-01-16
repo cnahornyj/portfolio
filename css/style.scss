@@ -97,12 +97,14 @@ nav:first-child {
             li {
                 color: white;
                 margin: 0;
-                padding: 10px;
+                padding: 20px 10px;
                 &:not(:last-child) {
                     border-bottom: 1px solid;
                 }
                 a {
                     font-family: Arial;
+                    font-weight: lighter;
+                    text-transform: uppercase;
                     text-decoration: none;
                     color: white;
                     &:hover {
@@ -131,24 +133,23 @@ nav:first-child {
     section:first-child, section:nth-of-type(2){
         h1 {
             font-family: 'Bogart';
-            font-size: 50px;
+            font-size: 40px;
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
         }
     } 
     section:first-child {
-        width: 50%;
-        h1 {
-            margin-top: 35%;
-        }
-        h2 {
-            text-align: center; 
-            margin-top: 5%
-        }
+        // width: 50%;
+        // h1 {
+        //     margin-top: 35%;
+        // }
+        // h2 {
+        //     text-align: center; 
+        //     margin-top: 5%
+        // }
         article {
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            justify-content: space-around;
             font-weight: bold;
             margin-top: 30%;
             p {
@@ -161,6 +162,7 @@ nav:first-child {
             } 
         }
     }
+    // Page d'accueil responsive
     section:nth-of-type(2) {
         display: none;
         width: 80%;
@@ -252,6 +254,7 @@ background: white;
                     .filtre {
                         font-family: "Montserrat";
                         font-weight: bold;
+                        background: white;
                         color: #b2a081;
                         border: 1px solid #b2a081;
                         border-radius: 15px;
@@ -270,6 +273,7 @@ background: white;
                         position: relative;
                         border: 1px solid #b2a081;
                         background-color: #b2a081;
+                        border: 1px solid;
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
                         width: 325px;
