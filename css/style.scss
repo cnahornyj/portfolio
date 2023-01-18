@@ -129,80 +129,98 @@ nav:first-child {
     letter-spacing: 1.5px;
 }
 
+
+// Page d'accueil
 #main-accueil {
-    section:first-child, section:nth-of-type(2){
+    section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 40%;
+        transform: translate(-50%, -50%);
+        background: #ffffff96;
+        border: 1px solid;
         h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+            width: 100%;
             font-family: 'Bogart';
             font-size: 40px;
-            text-align: center;
             line-height: 40px;
+            text-align: center;
         }
-    } 
-    section:first-child {
-        // width: 50%;
-        // h1 {
-        //     margin-top: 35%;
-        // }
-        // h2 {
-        //     text-align: center; 
-        //     margin-top: 5%
-        // }
-        article {
-            display: flex;
-            justify-content: space-around;
-            font-weight: bold;
-            margin-top: 30%;
-            p {
-                margin-right: 50px
-            }
-            a {
-                text-decoration: none; 
-                color: black; 
-                margin-left: 50px;
-            } 
-        }
-    }
-    // Page d'accueil responsive
-    section:nth-of-type(2) {
-        display: none;
-        width: 80%;
-        margin: auto;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        height: 675px;
-        background: #ffffffd1;
-        div {
-            display: flex; 
-            flex-direction: column;
-            h1 {
-                margin-top: 20%;
-            }
-            h2 {
+        h2 {
+            &:first-child {
+                margin-top: 20px; 
                 text-align: center; 
-                margin-top: 5%;
+                font-size: 20px
             }
-            article {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                font-weight: bold;
-                margin-top: 25%;
-                p {
-                    margin-right: 50px;
-                }
+            &:nth-of-type(2) {
+                font-size: 15px; position: absolute; left: 50%; transform: translate(-50%, 100%); bottom: 25px;
                 a {
                     text-decoration: none; 
-                    color: black; 
-                    margin-left: 50px; 
-                    border-bottom: 0.5px solid black;
-                    padding-bottom: 1px;
+                    color: black;
                 }
             }
         }
-    }
-    img {
-        width: 50%;
-    }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 170%);
+            margin-top: 25px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            a {
+                color: black;
+            }
+        }
+    } 
+}
+
+@media (max-width: 1200px) {
+    #main-accueil{
+        section {
+            width: 50%;
+        }
+    }    
+}
+
+@media (max-width: 950px) {
+    #main-accueil{
+        section {
+            width: 50%;
+            h2, p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }    
+}
+
+@media (max-width: 750px) {
+    #main-accueil{
+        section {
+            width: 65%;
+            h2, p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }    
+}
+
+@media (max-width: 550px) {
+    #main-accueil{
+        section {
+            width: 75%;
+        }
+    }    
 }
 
 #achievements {
@@ -439,17 +457,6 @@ background: white;
     }
 }
 @media (max-width: 1000px) {
-    #main-accueil {
-        section:first-child{
-            display: none;
-        }
-        section:nth-of-type(2){
-            display: block;
-        }
-        img {
-            display: none;
-          }
-    }
     #accueil {
         background-image: url("../assets/img/img-blur.jpg");
         background-size: cover;
