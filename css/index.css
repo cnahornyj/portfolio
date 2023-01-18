@@ -176,7 +176,7 @@ nav:first-child ul li:first-child {
   text-underline-offset: 8px;
 }
 #main-accueil section p a {
-  color: black;
+  color: lightslategrey;
 }
 
 @media (max-width: 1200px) {
@@ -207,6 +207,60 @@ nav:first-child ul li:first-child {
     width: 75%;
   }
 }
+#main-projets {
+  margin-top: 9%;
+}
+#main-projets section {
+  width: 85%;
+  margin: auto;
+}
+#main-projets section article {
+  display: flex;
+  border: 1px solid;
+  height: 500px;
+  background: #f6f6f6;
+}
+#main-projets section article div:first-child {
+  padding: 0 25px 0 25px;
+}
+#main-projets section article div:first-child h1 {
+  margin: 2% 0;
+  padding: 0 10px;
+  width: fit-content;
+  font-family: "Bogart";
+  font-size: 2.5vw;
+}
+#main-projets section article div:first-child p {
+  padding: 0 25px 0 10px;
+  font-size: 1.25vw;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+#main-projets section article div:first-child div {
+  display: flex;
+  margin-top: 50px;
+}
+#main-projets section article div:first-child div button {
+  font-size: 20px;
+  background: rgb(33, 33, 33);
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+#main-projets section article div:first-child div button a {
+  font-family: "BOGART";
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+#main-projets section article div:first-child div a:nth-child(2) {
+  margin-left: auto;
+}
+#main-projets section article div:first-child div img {
+  width: 75px;
+}
+
 #achievements {
   background: white;
 }
