@@ -240,17 +240,11 @@ nav:first-child ul li:first-child {
   background: rgb(33, 33, 33);
   color: white;
 }
-#achievements #main-achievements article #recherche, #achievements #main-achievements article #projets {
-  background: #f6f6f6;
-}
 #achievements #main-achievements article #recherche {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-right: 1px solid darkgray;
-  border-left: 1px solid darkgray;
-  margin-top: -42px;
-  padding: 40px;
+  padding-bottom: 20px;
 }
 #achievements #main-achievements article #recherche #filtres-selectionnes {
   height: 30px;
@@ -275,27 +269,23 @@ nav:first-child ul li:first-child {
   position: relative;
   border: 1px solid #b2a081;
   background-color: #b2a081;
-  border: 1px solid;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 325px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 210px;
   height: 41px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
 #achievements #main-achievements article #recherche #filtres .dropdown li[role=button] {
-  font-family: "Montserrat";
   font-weight: bold;
-  padding: 10px 0px;
-  padding-left: 15px;
+  padding: 10px 0 0 15px;
   list-style-position: inside;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 80%;
   color: white;
-  background-color: #b2a081;
 }
 #achievements #main-achievements article #recherche #filtres .dropdown .selected {
   color: white;
@@ -349,12 +339,8 @@ nav:first-child ul li:first-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-left: 1px solid darkgrey;
-  border-right: 1px solid darkgrey;
-  border-bottom: 1px solid darkgrey;
   color: #3c4244;
   margin-bottom: 5%;
-  padding: 0 40px;
 }
 #achievements #main-achievements article #projets .achievement {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

@@ -259,17 +259,11 @@ background: white;
                     color: white;
                 }
             }
-            #recherche, #projets {
-                background: #f6f6f6;
-            }
             #recherche {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border-right: 1px solid darkgray;
-                border-left: 1px solid darkgray;
-                margin-top: -42px;
-                padding: 40px;
+                padding-bottom: 20px;
                 #filtres-selectionnes {
                     height: 30px;
                     .filtre {
@@ -294,26 +288,22 @@ background: white;
                         position: relative;
                         border: 1px solid #b2a081;
                         background-color: #b2a081;
-                        border: 1px solid;
-                        border-top-left-radius: 5px;
-                        border-top-right-radius: 5px;
-                        width: 325px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        width: 210px;
                         height: 41px;
                         cursor: pointer;
                         margin: 0;
                         padding: 0;
                         li[role="button"] {
-                            font-family: "Montserrat";
                             font-weight: bold;
-                            padding: 10px 0px;
-                            padding-left: 15px;
+                            padding: 10px 0 0 15px;
                             list-style-position: inside;
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             max-width: 80%;
                             color: white;
-                            background-color: #b2a081;
                         }
                         .selected {
                             color: white;
@@ -371,12 +361,8 @@ background: white;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                border-left: 1px solid darkgrey;
-                border-right: 1px solid darkgrey;
-                border-bottom: 1px solid darkgrey;
                 color: #3c4244;
                 margin-bottom: 5%;
-                padding: 0 40px;
                 .achievement {
                     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
                     transition: 0.3s;
