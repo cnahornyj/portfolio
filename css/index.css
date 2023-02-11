@@ -214,23 +214,23 @@ nav:first-child ul li:first-child {
   width: 85%;
   margin: auto;
 }
-#main-projets section article {
+#main-projets #resume article {
   display: flex;
   border: 1px solid;
   height: 500px;
   background: #f6f6f6;
 }
-#main-projets section article div:first-child {
+#main-projets #resume article div:first-child {
   padding: 0 25px 0 25px;
 }
-#main-projets section article div:first-child h1 {
+#main-projets #resume article div:first-child h1 {
   margin: 2% 0;
   padding: 0 10px;
   width: fit-content;
   font-family: "Bogart";
   font-size: 2.5vw;
 }
-#main-projets section article div:first-child p {
+#main-projets #resume article div:first-child p {
   padding: 0 25px 0 10px;
   font-size: 1.25vw;
   font-weight: bold;
@@ -238,27 +238,59 @@ nav:first-child ul li:first-child {
   line-height: 1.5;
   letter-spacing: 0.25px;
 }
-#main-projets section article div:first-child div {
+#main-projets #resume article div:first-child div {
   display: flex;
-  margin-top: 50px;
+  margin-top: -25px;
 }
-#main-projets section article div:first-child div button {
+#main-projets #resume article div:first-child div button {
   font-size: 20px;
   background: rgb(33, 33, 33);
   padding: 15px 20px;
   border-radius: 30px;
 }
-#main-projets section article div:first-child div button a {
+#main-projets #resume article div:first-child div button a {
   font-family: "BOGART";
   font-weight: bold;
   color: white;
   text-decoration: none;
 }
-#main-projets section article div:first-child div a:nth-child(2) {
+#main-projets #resume article div:first-child div a:nth-child(2) {
   margin-left: auto;
 }
-#main-projets section article div:first-child div img {
+#main-projets #resume article div:first-child div img {
   width: 75px;
+}
+#main-projets #competences {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#main-projets #competences article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcfcfc;
+}
+#main-projets #competences article h2 {
+  font-family: "Bogart";
+  font-size: 2vw;
+}
+#main-projets #competences article .trait_dessus {
+  border-top: 1px solid grey;
+  width: 40%;
+}
+#main-projets #competences article .competence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 425px;
+  height: 475px;
+  border: 0.5px solid rgba(41, 47, 47, 0.2117647059);
+  background: #E1D8CF;
+}
+#main-projets #competences article .competence img {
+  width: 150px;
+  height: 150px;
 }
 
 #achievements {

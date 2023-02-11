@@ -228,6 +228,8 @@ nav:first-child {
     section {
         width: 85%;
         margin: auto;
+    }
+    #resume {
         article {
             display: flex; 
             border: 1px solid; 
@@ -253,7 +255,7 @@ nav:first-child {
                     }
                     div {
                         display: flex; 
-                        margin-top: 50px;
+                        margin-top: -25px;
                         button {
                             font-size: 20px;
                             background: rgb(33,33,33);
@@ -273,6 +275,38 @@ nav:first-child {
                             width: 75px;
                         }                                
                     }
+                }
+            }
+        }
+    }
+    #competences {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fcfcfc;
+            h2 {
+                font-family: "Bogart";
+                font-size: 2vw;
+            }
+            .trait_dessus {
+                border-top: 1px solid grey;
+                width: 40%;
+            }
+            .competence {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 425px;
+                height: 475px;
+                border: 0.5px solid rgba(41, 47, 47, 0.2117647059);
+                background: #E1D8CF;
+                img {
+                    width: 150px;
+                    height: 150px;
                 }
             }
         }
