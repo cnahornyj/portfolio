@@ -204,8 +204,64 @@ nav:first-child ul li:first-child {
   margin: auto;
   padding: 50px 0 50px 0;
 }
-.main-competences .competence:hover {
+.main-competences #resume {
+  width: 85%;
+  margin: auto;
+}
+.main-competences #resume article div h1 {
+  margin-top: 0;
+  font-family: "Bogart";
+  font-size: 30px;
+  font-weight: bold;
+}
+.main-competences #resume article div p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5;
+  padding-right: 75px;
+}
+.main-competences #resume article div p strong {
+  font-family: "Montserrat-Medium";
+}
+.main-competences #competences {
+  width: 85%;
+  margin: auto;
+}
+.main-competences #competences article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-competences #competences article h2 {
+  font-family: "Bogart";
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+.main-competences #competences article div.trait_dessus {
+  border-top: 1px solid grey;
+  width: 40%;
+}
+.main-competences #competences article .competence {
+  width: 325px;
+  height: 375px;
+  border: 1px solid rgb(33, 33, 33);
+  background: #E1D8CF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.main-competences #competences article .competence:hover {
   background: rgba(47, 46, 46, 0.3058823529);
+}
+.main-competences #competences article .competence h3 {
+  font-family: "Montserrat-Medium";
+  color: #4c4c4c;
+}
+.main-competences #competences article .competence img {
+  width: 150px;
 }
 
 #achievements {
