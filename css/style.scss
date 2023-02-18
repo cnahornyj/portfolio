@@ -182,7 +182,6 @@ nav:first-child {
         }
     }    
 }
-
 @media (max-width: 950px) {
     #main-accueil{
         section {
@@ -194,7 +193,6 @@ nav:first-child {
         }
     }    
 }
-
 @media (max-width: 750px) {
     #main-accueil{
         section {
@@ -206,7 +204,6 @@ nav:first-child {
         }
     }    
 }
-
 @media (max-width: 550px) {
     #main-accueil{
         section {
@@ -215,6 +212,7 @@ nav:first-child {
     }    
 }
 
+// Page competences
 .main-competences {
     width: 100%;
     margin: auto;
@@ -270,7 +268,21 @@ nav:first-child {
                 justify-content: center; 
                 margin-bottom: 50px;
                 &:hover {
-                    background: #2f2e2e4e; 
+                    background: #2f2e2e;
+                    h3, img {
+                        display: none;
+                    }
+                    ul {
+                        display: block; 
+                        //list-style: none; 
+                        font-family: 'Montserrat-Medium';       
+                        font-size: 20px;
+                        color: white;  
+                        padding: 0;
+                        li {
+                            padding-bottom: 5px;
+                        }
+                    }
                 }
                 h3 {
                     font-family: 'Montserrat-Medium';
@@ -279,11 +291,39 @@ nav:first-child {
                 img {
                     width: 150px;
                 }
+                ul {
+                    display: none;
+                }
             }
+        }
+        article:nth-child(2) {
+            flex-wrap: wrap;
         }
     }
 }
 
+// Media queries
+@media (max-width: 1200px) {
+    .main-competences {
+        #competences {
+            article:nth-child(2) {
+                width: 75%;
+                margin: auto;
+            }
+        }    
+    }
+}
+@media (max-width: 1050px) {
+    .main-competences {
+        #competences {
+            article:nth-child(2) {
+                justify-content: center;
+            }
+        }    
+    }
+}
+
+// Page des projets
 #achievements {
 background: white;
     #main-achievements {
@@ -539,7 +579,6 @@ background: white;
         }
     }
 }
-
 @media (max-width: 1150px){
     #main-achievements {
         article {
@@ -565,7 +604,6 @@ background: white;
         }
     }
 }
-
 @media (max-width: 1460px){
     #main-achievements {
         article {

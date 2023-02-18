@@ -254,7 +254,20 @@ nav:first-child ul li:first-child {
   margin-bottom: 50px;
 }
 .main-competences #competences article .competence:hover {
-  background: rgba(47, 46, 46, 0.3058823529);
+  background: #2f2e2e;
+}
+.main-competences #competences article .competence:hover h3, .main-competences #competences article .competence:hover img {
+  display: none;
+}
+.main-competences #competences article .competence:hover ul {
+  display: block;
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
+  color: white;
+  padding: 0;
+}
+.main-competences #competences article .competence:hover ul li {
+  padding-bottom: 5px;
 }
 .main-competences #competences article .competence h3 {
   font-family: "Montserrat-Medium";
@@ -263,7 +276,24 @@ nav:first-child ul li:first-child {
 .main-competences #competences article .competence img {
   width: 150px;
 }
+.main-competences #competences article .competence ul {
+  display: none;
+}
+.main-competences #competences article:nth-child(2) {
+  flex-wrap: wrap;
+}
 
+@media (max-width: 1200px) {
+  .main-competences #competences article:nth-child(2) {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media (max-width: 1050px) {
+  .main-competences #competences article:nth-child(2) {
+    justify-content: center;
+  }
+}
 #achievements {
   background: white;
 }
