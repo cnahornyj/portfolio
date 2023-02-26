@@ -175,6 +175,59 @@ nav:first-child {
     } 
 }
 
+#main-contact {
+    #img-contact-desktop {
+        width: 775px; 
+        height: 675px; 
+    }
+    section {
+        article:first-child {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-top: 3%;
+            .trait_dessous {
+                width: 150px; 
+                border-top: 1px solid grey;
+            }
+        }
+        h2 {
+            font-family: 'Bogart'; 
+            text-align: center;
+            padding: 0 10px; 
+        }
+        h3 {
+            font-family: 'Montserrat';
+            font-weight: bold;
+            width: 60%;
+            margin: auto;
+            line-height: 1.5;
+            letter-spacing: 0.25px;
+            text-align: justify; 
+            margin-bottom: 2%;
+        }
+        article:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: #e1d8cf;
+            width: 50%;
+            margin: auto;
+            padding: 10% 5%;
+            .moyen_comm {
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+            }
+            #trait_dessous {
+                border-top: 1px solid #000; 
+                width: 80%; 
+                margin: auto;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     #main-accueil{
         section {
@@ -367,7 +420,7 @@ background: white;
     #main-achievements {
         width: 85%;
         margin: auto;
-        margin-top: 8%;
+        margin-top: 5%;
         article {
             h2 {
                 font-size: 1.25em;
@@ -388,7 +441,7 @@ background: white;
                 h1 {
                     font-family: "Bogart";
                     font-size: 1.35em;
-                    width: 20%;
+                    width: 30%;
                     text-align: center;
                     padding: 10px;
                     background: rgb(33,33,33);
@@ -399,7 +452,7 @@ background: white;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
                 #filtres-selectionnes {
                     height: 30px;
                     .filtre {
@@ -568,15 +621,21 @@ background: white;
 }
 
 // Media queries
+@media (max-width: 770px){
+    #main-achievements {
+        article {
+            #projets {
+                justify-content: center !important;
+            }
+        }
+    }
+}
 @media (max-width: 890px){
     #main-achievements {
         article {
             h2 {
                 width: 90% !important;
                 margin: auto !important;
-            }
-            #projets {
-                justify-content: center;
             }
         }
     }
@@ -615,6 +674,13 @@ background: white;
         #trait_dessous {
             border-top: 1px solid antiquewhite;
         }
+    }
+    #main-contact {
+        section {
+            h3 {
+                color: antiquewhite;
+            }
+        } 
     }
 }
 @media (max-width: 1150px){

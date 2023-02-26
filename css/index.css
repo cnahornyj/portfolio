@@ -171,6 +171,55 @@ nav:first-child ul li:first-child {
   color: lightslategrey;
 }
 
+#main-contact #img-contact-desktop {
+  width: 775px;
+  height: 675px;
+}
+#main-contact section article:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+#main-contact section article:first-child .trait_dessous {
+  width: 150px;
+  border-top: 1px solid grey;
+}
+#main-contact section h2 {
+  font-family: "Bogart";
+  text-align: center;
+  padding: 0 10px;
+}
+#main-contact section h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  width: 60%;
+  margin: auto;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  text-align: justify;
+  margin-bottom: 2%;
+}
+#main-contact section article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #e1d8cf;
+  width: 50%;
+  margin: auto;
+  padding: 10% 5%;
+}
+#main-contact section article:nth-of-type(2) .moyen_comm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main-contact section article:nth-of-type(2) #trait_dessous {
+  border-top: 1px solid #000;
+  width: 80%;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   #main-accueil section {
     width: 50%;
@@ -330,7 +379,7 @@ nav:first-child ul li:first-child {
 #achievements #main-achievements {
   width: 85%;
   margin: auto;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 #achievements #main-achievements article h2 {
   font-size: 1.25em;
@@ -350,7 +399,7 @@ nav:first-child ul li:first-child {
 #achievements #main-achievements article #titre h1 {
   font-family: "Bogart";
   font-size: 1.35em;
-  width: 20%;
+  width: 30%;
   text-align: center;
   padding: 10px;
   background: rgb(33, 33, 33);
@@ -360,7 +409,7 @@ nav:first-child ul li:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 #achievements #main-achievements article #recherche #filtres-selectionnes {
   height: 30px;
@@ -522,13 +571,15 @@ nav:first-child ul li:first-child {
   overflow: auto !important;
 }
 
+@media (max-width: 770px) {
+  #main-achievements article #projets {
+    justify-content: center !important;
+  }
+}
 @media (max-width: 890px) {
   #main-achievements article h2 {
     width: 90% !important;
     margin: auto !important;
-  }
-  #main-achievements article #projets {
-    justify-content: center;
   }
 }
 @media (max-width: 1000px) {
@@ -562,6 +613,9 @@ nav:first-child ul li:first-child {
   }
   #text-contact #trait_dessous {
     border-top: 1px solid antiquewhite;
+  }
+  #main-contact section h3 {
+    color: antiquewhite;
   }
 }
 @media (max-width: 1150px) {
