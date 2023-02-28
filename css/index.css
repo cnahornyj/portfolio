@@ -204,7 +204,7 @@ nav:first-child ul li:first-child {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: #e1d8cf;
+  background: rgba(225, 216, 207, 0.9098039216);
   width: 50%;
   margin: auto;
   padding: 10% 5%;
@@ -596,7 +596,7 @@ nav:first-child ul li:first-child {
     background-size: cover;
   }
   #contact {
-    background-image: url("../assets/img/contact-img-blur.jpg");
+    background-image: url("../assets/img/contact-img.jpg");
     background-size: cover;
   }
   #presentation,
@@ -613,17 +613,11 @@ nav:first-child ul li:first-child {
   #text-contact {
     width: 100%;
   }
-  #text-contact h2 {
-    color: antiquewhite;
-  }
   #text-contact article {
     margin-top: 10%;
   }
   #text-contact #trait_dessous {
     border-top: 1px solid antiquewhite;
-  }
-  #main-contact section h3 {
-    color: antiquewhite;
   }
 }
 @media (max-width: 1150px) {
