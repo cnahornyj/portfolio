@@ -218,11 +218,19 @@ nav:first-child {
                 display: flex; 
                 flex-direction: column; 
                 align-items: center;
+                img {
+                    width: 50px;
+                }
+                p {
+                    font-weight: bold;
+                }
             }
             #trait_dessous {
                 border-top: 1px solid #000; 
                 width: 80%; 
                 margin: auto;
+                margin-top: 4%;
+                margin-bottom: 4%;
             }
         }
     }
