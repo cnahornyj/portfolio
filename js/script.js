@@ -1,5 +1,5 @@
 async function getAchievements() {
-  const url = "../assets/achievements.json";
+  const url = "https://github.com/cnahornyj/jsonportfolio/blob/main/achievements.json";
   try {
     let res = await fetch(url);
     return await res.json();
