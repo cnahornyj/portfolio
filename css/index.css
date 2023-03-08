@@ -85,6 +85,7 @@ nav:first-child ul li:first-child {
   opacity: 0;
   background: rgb(33, 33, 33);
   transition: opacity 0.1s cubic-bezier(0, 0, 0.38, 0.9);
+  z-index: 1;
 }
 #section-nav-mobile nav ul {
   padding: 0 10px;
@@ -99,8 +100,8 @@ nav:first-child ul li:first-child {
   border-bottom: 1px solid;
 }
 #section-nav-mobile nav ul li a {
-  font-family: Arial;
-  font-weight: lighter;
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
