@@ -139,6 +139,7 @@ nav:first-child ul li:first-child {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+  letter-spacing: 2.5px;
 }
 #main-accueil section h2:first-child {
   margin-top: 20px;
@@ -161,14 +162,19 @@ nav:first-child ul li:first-child {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 170%);
-  margin-top: 25px;
-  font-size: 15px;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 10px;
   font-weight: bold;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 20px;
+  text-align: center;
 }
 #main-accueil section p a {
-  color: lightslategrey;
+  background: rgb(33, 33, 33);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 #main-contact #img-contact-desktop {
