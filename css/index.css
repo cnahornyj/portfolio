@@ -390,10 +390,10 @@ nav:first-child ul li:first-child {
   margin-top: 5%;
 }
 #achievements #main-achievements article h2 {
-  font-size: 1.25em;
-  text-align: center;
+  font-size: 1.5vw;
   line-height: 1.5;
   letter-spacing: 0.25px;
+  text-align: center;
 }
 #achievements #main-achievements article #titre {
   display: flex;
