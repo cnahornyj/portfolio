@@ -17,6 +17,24 @@ body {
   background: #f6f6f6;
 }
 
+h1 {
+  font-size: 1.5em;
+  font-family: "Montserrat-Medium";
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-weight: 500;
+  font-family: "Montserrat-Medium";
+}
+
+p {
+  font-size: 1em;
+}
+
 /* Navigation sur écran desktop */
 nav:first-child {
   background: rgb(33, 33, 33);
@@ -117,7 +135,6 @@ nav:first-child ul li:first-child {
 #main-accueil,
 #main-contact {
   display: flex;
-  letter-spacing: 1.5px;
 }
 
 #main-accueil section {
@@ -136,23 +153,12 @@ nav:first-child ul li:first-child {
   left: 50%;
   transform: translate(-50%, -90%);
   width: 100%;
-  font-family: "Bogart";
-  font-size: 40px;
-  line-height: 40px;
   text-align: center;
-  letter-spacing: 2.5px;
+  font-size: 2em;
 }
 #main-accueil section h2:first-child {
   margin-top: 20px;
   text-align: center;
-  font-size: 20px;
-}
-#main-accueil section h2:nth-of-type(2) {
-  font-size: 15px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  bottom: 25px;
 }
 #main-accueil section h2:nth-of-type(2) a {
   text-decoration: none;
@@ -165,7 +171,6 @@ nav:first-child ul li:first-child {
   transform: translate(-50%, 170%);
   margin-top: 40px;
   width: 100%;
-  font-size: 10px;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 20px;
@@ -186,24 +191,19 @@ nav:first-child ul li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3%;
 }
 #main-contact section article:first-child .trait_dessous {
   width: 150px;
   border-top: 1px solid grey;
 }
-#main-contact section h2 {
-  font-family: "Bogart";
+#main-contact section h1 {
   text-align: center;
   padding: 0 10px;
 }
-#main-contact section h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
+#main-contact section h2 {
   width: 60%;
   margin: auto;
   line-height: 1.5;
-  letter-spacing: 0.25px;
   text-align: justify;
   margin-bottom: 2%;
 }
@@ -226,6 +226,8 @@ nav:first-child ul li:first-child {
 }
 #main-contact section article:nth-of-type(2) .moyen_comm p {
   font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.3;
 }
 #main-contact section article:nth-of-type(2) #trait_dessous {
   border-top: 1px solid #000;
@@ -277,15 +279,13 @@ nav:first-child ul li:first-child {
 }
 .main-competences #resume article div section h1 {
   margin-top: 0;
-  font-family: "Bogart";
-  font-size: 30px;
   font-weight: bold;
 }
 .main-competences #resume article div section p {
-  font-size: 1.5vw;
+  font-size: 1.25em;
   font-weight: bold;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.75;
   padding-right: 75px;
 }
 .main-competences #resume article div section p strong {
@@ -315,9 +315,9 @@ nav:first-child ul li:first-child {
   justify-content: space-between;
 }
 .main-competences #competences article h2 {
-  font-family: "Bogart";
   text-align: center;
   padding: 0 10px 0 10px;
+  font-family: "Montserrat-Medium";
 }
 .main-competences #competences article div.trait_dessus {
   border-top: 1px solid grey;
@@ -343,7 +343,6 @@ nav:first-child ul li:first-child {
 .main-competences #competences article .competence:hover ul {
   display: block;
   font-family: "Montserrat-Medium";
-  font-size: 20px;
   color: white;
   padding: 0;
 }
@@ -397,9 +396,7 @@ nav:first-child ul li:first-child {
   margin-top: 5%;
 }
 #achievements #main-achievements article h2 {
-  font-size: 1.5vw;
   line-height: 1.5;
-  letter-spacing: 0.25px;
   text-align: center;
 }
 #achievements #main-achievements article #titre {
@@ -412,8 +409,6 @@ nav:first-child ul li:first-child {
   width: 40%;
 }
 #achievements #main-achievements article #titre h1 {
-  font-family: "Bogart";
-  font-size: 1.35em;
   width: 30%;
   text-align: center;
   padding: 10px;
@@ -545,19 +540,14 @@ nav:first-child ul li:first-child {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 #achievements #main-achievements article #projets .achievement .description {
-  padding: 7px 20px;
-  letter-spacing: initial;
+  padding: 0 20px;
 }
 #achievements #main-achievements article #projets .achievement .description h3 {
-  font-family: "Bogart";
-  margin-bottom: 0px;
+  margin: 5px 0 0px 0;
 }
 #achievements #main-achievements article #projets .achievement .description p {
-  font-size: 14px;
-  font-family: "Montserrat";
   line-height: 1.5;
   font-weight: bold;
-  margin-top: 2px;
 }
 #achievements #main-achievements article #projets .achievement .boutons-projets {
   display: flex;
@@ -575,10 +565,8 @@ nav:first-child ul li:first-child {
   transform: scale(1.02);
 }
 #achievements #main-achievements article #projets .achievement .boutons-projets button a {
-  font-family: "Bogart";
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
 
 .open {
@@ -618,7 +606,7 @@ nav:first-child ul li:first-child {
     background-color: #2f2e2e;
   }
   #text-contact {
-    width: 100%;
+    width: 100% !important;
   }
   #text-contact article {
     margin-top: 10%;

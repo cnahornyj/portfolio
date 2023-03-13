@@ -19,6 +19,21 @@ body {
     background: #f6f6f6;
 }
 
+h1 {
+    font-size: 1.5em;
+    font-family: 'Montserrat-Medium';
+}
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-weight: 500;
+    font-family: 'Montserrat-Medium';
+}
+p {
+    font-size: 1em;
+}
+
 /* Navigation sur écran desktop */
 nav:first-child {
     background: rgb(33, 33, 33);
@@ -119,7 +134,6 @@ nav:first-child {
 #main-accueil,
 #main-contact {
     display: flex;
-    letter-spacing: 1.5px;
 }
 
 
@@ -140,20 +154,17 @@ nav:first-child {
             left: 50%;
             transform: translate(-50%, -90%);
             width: 100%;
-            font-family: 'Bogart';
-            font-size: 40px;
-            line-height: 40px;
             text-align: center;
-            letter-spacing: 2.5px;
+            font-size: 2em;
         }
         h2 {
             &:first-child {
                 margin-top: 20px; 
                 text-align: center; 
-                font-size: 20px
+                //font-size: 20px
             }
             &:nth-of-type(2) {
-                font-size: 15px; position: absolute; left: 50%; transform: translate(-50%, 100%); bottom: 25px;
+                //font-size: 15px; position: absolute; left: 50%; transform: translate(-50%, 100%); bottom: 25px;
                 a {
                     text-decoration: none; 
                     color: black;
@@ -167,7 +178,7 @@ nav:first-child {
             transform: translate(-50%, 170%);
             margin-top: 40px;
             width: 100%;
-            font-size: 10px;
+            //font-size: 10px;
             font-weight: bold;
             text-decoration: underline;
             text-underline-offset: 20px;
@@ -192,24 +203,19 @@ nav:first-child {
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            margin-top: 3%;
             .trait_dessous {
                 width: 150px; 
                 border-top: 1px solid grey;
             }
         }
-        h2 {
-            font-family: 'Bogart'; 
+        h1 {
             text-align: center;
             padding: 0 10px; 
         }
-        h3 {
-            font-family: 'Montserrat';
-            font-weight: bold;
+        h2 {
             width: 60%;
             margin: auto;
             line-height: 1.5;
-            letter-spacing: 0.25px;
             text-align: justify; 
             margin-bottom: 2%;
         }
@@ -230,6 +236,8 @@ nav:first-child {
                 }
                 p {
                     font-weight: bold;
+                    letter-spacing: 1px;
+                    line-height: 1.3;
                 }
             }
             #trait_dessous {
@@ -294,15 +302,13 @@ nav:first-child {
                 section {
                     h1 {
                         margin-top: 0;
-                        font-family: 'Bogart';
-                        font-size: 30px; 
                         font-weight: bold;  
                     }
                     p {
-                        font-size: 1.5vw; 
+                        font-size: 1.25em; 
                         font-weight: bold; 
                         text-align: justify; 
-                        line-height: 1.5; 
+                        line-height: 1.75; 
                         padding-right: 75px;
                         strong {
                             font-family: 'Montserrat-Medium';
@@ -334,9 +340,9 @@ nav:first-child {
             align-items: center; 
             justify-content: space-between;
             h2 {
-                font-family: 'Bogart'; 
                 text-align: center;
-                padding: 0 10px 0 10px;                 
+                padding: 0 10px 0 10px;  
+                font-family: 'Montserrat-Medium';               
             }
             div.trait_dessus {
                 border-top: 1px solid grey;
@@ -361,7 +367,7 @@ nav:first-child {
                         display: block; 
                         //list-style: none; 
                         font-family: 'Montserrat-Medium';       
-                        font-size: 20px;
+                        //font-size: 20px;
                         color: white;  
                         padding: 0;
                         li {
@@ -438,9 +444,7 @@ background: white;
         margin-top: 5%;
         article {
             h2 {
-                font-size: 1.5vw;
                 line-height: 1.5;
-                letter-spacing: 0.25px;
                 text-align: center;
             }
             #titre {
@@ -453,8 +457,6 @@ background: white;
                     width: 40%;
                 }
                 h1 {
-                    font-family: "Bogart";
-                    font-size: 1.35em;
                     width: 30%;
                     text-align: center;
                     padding: 10px;
@@ -588,18 +590,13 @@ background: white;
                         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
                     }
                     .description {
-                        padding: 7px 20px;
-                        letter-spacing: initial;
+                        padding: 0 20px;
                         h3 {
-                            font-family: "Bogart";
-                            margin-bottom: 0px;
+                            margin: 5px 0 0px 0;
                         }
                         p {
-                            font-size: 14px;
-                            font-family: "Montserrat";
                             line-height: 1.5;
                             font-weight: bold;
-                            margin-top: 2px;
                         }
                     }
                     .boutons-projets {
@@ -616,10 +613,8 @@ background: white;
                                 transform: scale(1.02);
                             }
                             a {
-                                font-family: "Bogart";
                                 text-decoration: none;
                                 color: white;
-                                font-weight: bold;
                             }
                         }
                     }
@@ -678,7 +673,7 @@ background: white;
         background-color: #2f2e2e;
     }
     #text-contact {
-        width: 100%;
+        width: 100% !important;
         article {
             margin-top: 10%;
         }
