@@ -151,7 +151,7 @@ nav:first-child ul li:first-child {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, -110%);
   width: 100%;
   text-align: center;
   font-size: 2em;
@@ -159,6 +159,13 @@ nav:first-child ul li:first-child {
 #main-accueil section h2:first-child {
   margin-top: 20px;
   text-align: center;
+}
+#main-accueil section h2:nth-of-type(2) {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 170%);
+  font-size: 1.1em;
 }
 #main-accueil section h2:nth-of-type(2) a {
   text-decoration: none;
@@ -168,7 +175,7 @@ nav:first-child ul li:first-child {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 170%);
+  transform: translate(-50%, 50%);
   margin-top: 40px;
   width: 100%;
   font-weight: bold;
@@ -396,6 +403,7 @@ nav:first-child ul li:first-child {
   margin-top: 5%;
 }
 #achievements #main-achievements article h2 {
+  font-size: 1.25em;
   line-height: 1.5;
   text-align: center;
 }
@@ -414,6 +422,7 @@ nav:first-child ul li:first-child {
   padding: 10px;
   background: rgb(33, 33, 33);
   color: white;
+  font-weight: 500;
 }
 #achievements #main-achievements article #recherche {
   display: flex;
@@ -574,15 +583,17 @@ nav:first-child ul li:first-child {
   overflow: auto !important;
 }
 
-@media (max-width: 770px) {
-  #main-achievements article #projets {
-    justify-content: center !important;
+@media (max-width: 540px) {
+  #main-achievements article h1 {
+    font-size: 1.25em;
   }
 }
-@media (max-width: 890px) {
+@media (max-width: 770px) {
   #main-achievements article h2 {
-    width: 90% !important;
-    margin: auto !important;
+    font-size: 1.2em;
+  }
+  #main-achievements article #projets {
+    justify-content: center !important;
   }
 }
 @media (max-width: 1000px) {
@@ -630,9 +641,9 @@ nav:first-child ul li:first-child {
     padding-top: 10px;
   }
 }
-@media (max-width: 1460px) {
+@media (max-width: 1275px) {
   #main-achievements article h2 {
-    width: 60%;
+    width: 100%;
     margin: auto;
   }
 }
