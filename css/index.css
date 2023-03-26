@@ -188,11 +188,16 @@ nav:first-child ul li:first-child {
   color: white;
   padding: 10px;
   border-radius: 20px;
+  font-size: 0.95em;
 }
 
 #main-contact #img-contact-desktop {
-  width: 775px;
-  height: 675px;
+  width: 50%;
+  height: 100vh;
+}
+#main-contact section {
+  width: 50%;
+  padding-top: 50px;
 }
 #main-contact section article:first-child {
   display: flex;
@@ -576,6 +581,7 @@ nav:first-child ul li:first-child {
 #achievements #main-achievements article #projets .achievement .boutons-projets button a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
 .open {
@@ -596,7 +602,7 @@ nav:first-child ul li:first-child {
     justify-content: center !important;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   #accueil {
     background-image: url("../assets/img/img-blur.jpg");
     background-size: cover;
@@ -618,9 +624,6 @@ nav:first-child ul li:first-child {
   }
   #text-contact {
     width: 100% !important;
-  }
-  #text-contact article {
-    margin-top: 10%;
   }
   #text-contact #trait_dessous {
     border-top: 1px solid antiquewhite;
