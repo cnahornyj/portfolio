@@ -591,7 +591,7 @@ nav:first-child ul li:first-child {
 
 @media (max-width: 540px) {
   #main-achievements article h1 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
 @media (max-width: 770px) {
