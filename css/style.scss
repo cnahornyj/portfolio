@@ -222,7 +222,7 @@ nav:first-child {
             width: 60%;
             margin: auto;
             line-height: 1.5;
-            text-align: justify; 
+            text-align: center; 
             margin-bottom: 2%;
         }
         article:nth-of-type(2) {
@@ -639,6 +639,14 @@ background: white;
 }
 
 // Media queries
+@media (max-width: 440px){
+    #text-contact {
+        p {
+            font-size: 0.75em; 
+        }
+    }
+}
+
 @media (max-width: 540px){
     #main-achievements {
         article {

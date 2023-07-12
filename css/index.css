@@ -216,7 +216,7 @@ nav:first-child ul li:first-child {
   width: 60%;
   margin: auto;
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 2%;
 }
 #main-contact section article:nth-of-type(2) {
@@ -589,6 +589,11 @@ nav:first-child ul li:first-child {
   overflow: auto !important;
 }
 
+@media (max-width: 440px) {
+  #text-contact p {
+    font-size: 0.75em;
+  }
+}
 @media (max-width: 540px) {
   #main-achievements article h1 {
     font-size: 1em;
